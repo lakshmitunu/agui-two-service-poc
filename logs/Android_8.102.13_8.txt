@@ -1,0 +1,1683 @@
+--------- beginning of system
+09-20 17:38:42.409 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:38:42.763 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:39:23.389 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:39:23.517 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:44:21.025 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:44:27.377 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:44:27.526 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:47:59.798 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+09-20 17:47:59.945 28814 28814 D ActivityThread: com.verizon.familybase.parent will use render engine as VK
+--------- beginning of main
+09-20 18:31:35.322 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 39MB AllocSpace bytes, 43(1400KB) LOS objects, 34% free, 80MB/123MB, paused 3.787ms,13.634ms total 218.308ms
+09-20 18:31:38.590 28814 28911 V CLogger : needsRotation false
+09-20 18:31:49.036 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 41MB AllocSpace bytes, 35(1316KB) LOS objects, 34% free, 81MB/123MB, paused 3.833ms,13.583ms total 222.841ms
+09-20 18:31:56.797 28814 32078 D FlightLandingDetector: [acc] Checking 3662 samples
+09-20 18:31:56.797 28814 32078 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244579822597696, value=9.92105)
+09-20 18:31:56.855 28814  4142 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:31:56.855 28814  4142 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:31:56.855 28814  4142 D FlightLandingDetector: [acc] Checking 526 samples
+09-20 18:31:56.855 28814  4142 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244579879919363, value=9.91626)
+09-20 18:32:03.032 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 40MB AllocSpace bytes, 47(1736KB) LOS objects, 34% free, 81MB/123MB, paused 3.378ms,13.861ms total 217.327ms
+09-20 18:32:08.603 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:32:18.228 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 41MB AllocSpace bytes, 43(1400KB) LOS objects, 34% free, 81MB/123MB, paused 3.562ms,14.473ms total 222.656ms
+09-20 18:32:32.556 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 40MB AllocSpace bytes, 48(1756KB) LOS objects, 34% free, 81MB/123MB, paused 3.495ms,13.708ms total 216.741ms
+09-20 18:32:39.460 28814 28911 V CLogger : needsRotation false
+09-20 18:32:39.515 28814 28911 V CLogger : needsRotation false
+09-20 18:32:39.521 28814 28911 V CLogger : needsRotation false
+09-20 18:32:46.064 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 41MB AllocSpace bytes, 43(1628KB) LOS objects, 34% free, 81MB/123MB, paused 3.722ms,14.150ms total 212.166ms
+09-20 18:32:56.880 28814  4152 D FlightLandingDetector: [acc] Checking 3662 samples
+09-20 18:32:56.880 28814  4152 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244639891895642, value=10.020557)
+09-20 18:32:56.954 28814  4139 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:32:56.954 28814  4139 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:32:56.954 28814  4139 D FlightLandingDetector: [acc] Checking 526 samples
+09-20 18:32:56.954 28814  4139 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244639968305433, value=9.8996315)
+09-20 18:33:01.019 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 42MB AllocSpace bytes, 32(1000KB) LOS objects, 32% free, 83MB/123MB, paused 5.690ms,16.680ms total 234.049ms
+09-20 18:33:01.122 28814 28814 I VRI[MainActivity]@fad523c: onDisplayChanged oldDisplayState=1 newDisplayState=2
+09-20 18:33:01.123 28814 28814 I VRI[DashboardActivity]@43fd4d9: onDisplayChanged oldDisplayState=1 newDisplayState=2
+09-20 18:33:01.241 28814 32602 I CameraManagerGlobal: Camera 4 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPENING for client client.pid<1536> API Level 2 User Id 0Device Id 0
+09-20 18:33:01.245 28814 28911 V CLogger : needsRotation false
+09-20 18:33:01.254 28814 32602 I CameraManagerGlobal: Camera 4 facing CAMERA_FACING_FRONT state now CAMERA_STATE_OPEN for client client.pid<1536> API Level 2 User Id 0Device Id 0
+09-20 18:33:01.432 28814 32602 I CameraManagerGlobal: Camera 4 facing CAMERA_FACING_FRONT state now CAMERA_STATE_ACTIVE for client client.pid<1536> API Level 2 User Id 0Device Id 0
+09-20 18:33:02.531 28814 31242 I CameraManagerGlobal: Camera 4 facing CAMERA_FACING_FRONT state now CAMERA_STATE_IDLE for client client.pid<1536> API Level 2 User Id 0Device Id 0
+09-20 18:33:02.669 28814 31242 I CameraManagerGlobal: Camera 4 facing CAMERA_FACING_FRONT state now CAMERA_STATE_CLOSED for client client.pid<1536> API Level 2 User Id 0Device Id 0
+09-20 18:33:02.766 28814 28814 I VRI[DashboardActivity]@43fd4d9: handleAppVisibility mAppVisible = false visible = true
+09-20 18:33:02.778 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:02.783 28814 28814 I VRI[DashboardActivity]@43fd4d9: Relayout returned: old=(0,0,1080,2316) new=(0,0,1080,2316) relayoutAsync=false req=(1080,2316)4 dur=4 res=0x0 s={false 0x0} ch=false seqId=0
+09-20 18:33:02.784 28814 28814 I VRI[DashboardActivity]@43fd4d9: stopped(false) old = true
+09-20 18:33:02.784 28814 28814 D VRI[DashboardActivity]@43fd4d9: WindowStopped on com.verizon.familybase.parent/com.verizon.familybase.dashboard.DashboardActivity set to false
+09-20 18:33:02.860 28814 11523 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/safety/fam/pet-tracker/v6/sessions
+09-20 18:33:02.867 28814  4155 I TOKEN_REFRESH: Token refresh api started. [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:58]
+09-20 18:33:02.874 28814 11528 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (275-byte body)
+09-20 18:33:02.875 28814 11529 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v7/user/auth/token (2647-byte body)
+09-20 18:33:02.927 28814 28814 I FIAM.Headless: went foreground
+09-20 18:33:02.930 28814 28814 I FIAM.Display: Binding to activity: com.verizon.familybase.dashboard.DashboardActivity
+09-20 18:33:02.930 28814 28814 I FIAM.Headless: Setting display event component
+09-20 18:33:02.939 28814 28835 D SessionLifecycleClient: Sending lifecycle 1 to service
+09-20 18:33:02.941 28814 28986 D SessionLifecycleService: Activity foregrounding at 134839434.
+09-20 18:33:02.945 28814 11558 I okhttp.OkHttpClient: --> GET https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/fam_feature_permissions_v5.json
+09-20 18:33:02.948 28814 11555 I okhttp.OkHttpClient: --> GET https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/auth-feature-mapping_v2.json
+09-20 18:33:02.949 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/frisco/commsplatform/v5/profiles/pubnubConfiguration
+09-20 18:33:02.954 28814  4146 D SensorManager: registerListener :: 111, Rotation Vector  Non-wakeup, 100000, 0, 
+09-20 18:33:02.965 28814 11559 I okhttp.OkHttpClient: --> GET https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/fam_devicetype_feature_support_v2.json
+09-20 18:33:02.969 28814 11567 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/servicecatalog/fam/servicescatalog/v6/eligibleservices
+09-20 18:33:02.995 28814 11571 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/auth/frisco/mappcontent/v6/configs?domain=friscoParentalControl
+09-20 18:33:03.076 28814 28814 I Choreographer: Skipped 35 frames!  The application may be doing too much work on its main thread.
+09-20 18:33:03.126 28814 28814 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.verizon.familybase.parent/com.verizon.familybase.dashboard.DashboardActivity
+09-20 18:33:03.127 28814 28814 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.verizon.familybase.parent/com.verizon.familybase.dashboard.DashboardActivity
+09-20 18:33:03.129 28814 28814 W libc    : Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+09-20 18:33:03.129 28814 28814 I BufferQueueProducer: [](id:708e0000004f,api:0,p:0,c:28814) setDequeueTimeout:2077252342
+09-20 18:33:03.130 28814 28814 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= VRI[DashboardActivity]@43fd4d9 mNativeObject= 0xb4000078277d0290 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3585 android.view.ViewRootImpl.relayoutWindow:11685 android.view.ViewRootImpl.performTraversals:4804 android.view.ViewRootImpl.doTraversal:3924 android.view.ViewRootImpl$TraversalRunnable.run:12903 android.view.Choreographer$CallbackRecord.run:1901 android.view.Choreographer$CallbackRecord.run:1910 android.view.Choreographer.doCallbacks:1367 android.view.Choreographer.doFrame:1292 android.view.Choreographer$FrameDisplayEventReceiver.run:1870 
+09-20 18:33:03.130 28814 28814 I BLASTBufferQueue_Java: update, w= 1080 h= 2316 mName = VRI[DashboardActivity]@43fd4d9 mNativeObject= 0xb4000078277d0290 sc.mNativeObject= 0xb4000077777512d0 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3590 android.view.ViewRootImpl.relayoutWindow:11685 android.view.ViewRootImpl.performTraversals:4804 android.view.ViewRootImpl.doTraversal:3924 android.view.ViewRootImpl$TraversalRunnable.run:12903 android.view.Choreographer$CallbackRecord.run:1901 
+09-20 18:33:03.131 28814 28814 W libc    : Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+09-20 18:33:03.131 28814 28814 I VRI[DashboardActivity]@43fd4d9: Relayout returned: old=(0,0,1080,2316) new=(0,0,1080,2316) relayoutAsync=false req=(1080,2316)0 dur=8 res=0x3 s={true 0xb400007867b1ba30} ch=true seqId=0
+09-20 18:33:03.133 28814 28814 D VRI[DashboardActivity]@43fd4d9: mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007867b1ba30} hwInitialized=true
+09-20 18:33:03.138 28814 28814 D VRI[DashboardActivity]@43fd4d9: reportNextDraw android.view.ViewRootImpl.performTraversals:5443 android.view.ViewRootImpl.doTraversal:3924 android.view.ViewRootImpl$TraversalRunnable.run:12903 android.view.Choreographer$CallbackRecord.run:1901 android.view.Choreographer$CallbackRecord.run:1910 
+09-20 18:33:03.138 28814 28814 D VRI[DashboardActivity]@43fd4d9: Setup new sync=wmsSync-VRI[DashboardActivity]@43fd4d9#82
+09-20 18:33:03.138 28814 28814 I VRI[DashboardActivity]@43fd4d9: Creating new active sync group VRI[DashboardActivity]@43fd4d9#83
+09-20 18:33:03.138 28814 28814 D VRI[DashboardActivity]@43fd4d9: Start draw after previous draw not visible
+09-20 18:33:03.139 28814 28814 D VRI[DashboardActivity]@43fd4d9: registerCallbacksForSync syncBuffer=false
+09-20 18:33:03.218 28814 28967 D VRI[DashboardActivity]@43fd4d9: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-20 18:33:03.218 28814 28967 I VRI[DashboardActivity]@43fd4d9: mWNT: t=0xb4000078f78c6e10 mBlastBufferQueue=0xb4000078277d0290 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15441 android.view.ThreadedRenderer$1.onFrameDraw:718 <bottom of call stack> 
+09-20 18:33:03.218 28814 28967 I VRI[DashboardActivity]@43fd4d9: Setting up sync and frameCommitCallback
+09-20 18:33:03.234 28814 28955 I BLASTBufferQueue: [VRI[DashboardActivity]@43fd4d9#54](f:0,a:0,s:0) onFrameAvailable the first frame is available
+09-20 18:33:03.234 28814 28955 I SurfaceComposerClient: apply transaction with the first frame. layerId: 2508, bufferData(ID: 123755187667652, frameNumber: 1)
+09-20 18:33:03.234 28814 28955 I VRI[DashboardActivity]@43fd4d9: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-20 18:33:03.235 28814 28814 D VRI[DashboardActivity]@43fd4d9: reportDrawFinished seqId=0
+09-20 18:33:03.248 28814 28814 I VRI[DashboardActivity]@43fd4d9: handleResized, frames=ClientWindowFrames{frame=[0,0][1080,2316] display=[0,0][1080,2316] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+09-20 18:33:03.266 28814 28911 V CLogger : needsRotation false
+09-20 18:33:03.329 28814  4133 D SensorManager: unregisterListener
+09-20 18:33:03.329 28814 11529 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v7/user/auth/token (453ms, 8495-byte body)
+09-20 18:33:03.340 28814 11688 D SensorManager: registerListener :: 111, Rotation Vector  Non-wakeup, 100000, 0, 
+09-20 18:33:03.357 28814 11682 I TOKEN_REFRESH: Token refresh api response received size 2
+09-20 18:33:03.357 28814 11682 I TOKEN_REFRESH:             first false
+09-20 18:33:03.357 28814 11682 I TOKEN_REFRESH:             second false [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:266]
+09-20 18:33:03.373 28814 11682 I TOKEN_REFRESH: Token stored. [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:272]
+09-20 18:33:03.380 28814 28814 I Choreographer: Skipped 35 frames!  The application may be doing too much work on its main thread.
+09-20 18:33:03.385 28814 11528 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=0 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 510ms
+09-20 18:33:03.388 28814 11558 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=1 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 442ms
+09-20 18:33:03.393 28814 11555 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=2 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 445ms
+09-20 18:33:03.394 28814 11557 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=3 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 445ms
+09-20 18:33:03.395 28814 28814 I BLASTBufferQueue_Java: update, w= 1080 h= 2316 mName = VRI[DashboardActivity]@43fd4d9 mNativeObject= 0xb4000078277d0290 sc.mNativeObject= 0xb4000077777512d0 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3574 android.view.ViewRootImpl.relayoutWindow:11685 android.view.ViewRootImpl.performTraversals:4804 android.view.ViewRootImpl.doTraversal:3924 android.view.ViewRootImpl$TraversalRunnable.run:12903 android.view.Choreographer$CallbackRecord.run:1901 
+09-20 18:33:03.395 28814 28814 I VRI[DashboardActivity]@43fd4d9: Relayout returned: old=(0,0,1080,2316) new=(0,0,1080,2316) relayoutAsync=true req=(1080,2316)0 dur=0 res=0x0 s={true 0xb400007867b1ba30} ch=false seqId=0
+09-20 18:33:03.399 28814 28814 I VRI[DashboardActivity]@43fd4d9: registerCallbackForPendingTransactions
+09-20 18:33:03.419 28814 28968 I VRI[DashboardActivity]@43fd4d9: mWNT: t=0xb4000078f7928fd0 mBlastBufferQueue=0xb4000078277d0290 fn= 2 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6536 android.view.ViewRootImpl$4.onFrameDraw:2489 android.view.ThreadedRenderer$1.onFrameDraw:718 
+09-20 18:33:03.419 28814 11567 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=5 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 442ms
+09-20 18:33:03.424 28814 11571 W milybase.parent: Long monitor contention with owner OkHttp https://api.prd.vsf.aws.vz-connect.com/... (11523) at com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85)(r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:33) waiters=6 in com.verizon.data.token.model.RefreshTokenResultType com.verizon.data.network.interceptor.TokenAwareInterceptor.processTags(d85, j85) for 426ms
+09-20 18:33:03.445 28814 28814 D VRI[DashboardActivity]@43fd4d9: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007867b1ba30}
+09-20 18:33:03.447 28814 28814 I Luciq   : App warm start flow - Dashboard [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:18]
+09-20 18:33:03.449 28814 28814 D InputMethodManagerUtils: startInputInner - Id : 0
+09-20 18:33:03.450 28814 28814 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+09-20 18:33:03.478 28814 28989 D InputTransport: Input channel constructed: 'ClientS', fd=402
+09-20 18:33:03.555 28814 28814 I InputMethodManager: handleMessage: setImeVisibility visible=false
+09-20 18:33:03.555 28814 28814 D InsetsController: hide(ime(), fromIme=false)
+09-20 18:33:03.555 28814 28814 I ImeTracker: com.verizon.familybase.parent:8d679a16: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-20 18:33:03.557 28814  4151 I LocationServiceManagerImpl: LocationUpdate: Skipped WithInThreshold request with Trigger:selfLocationRequest [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:253]
+09-20 18:33:03.569 28814 28911 V CLogger : needsRotation false
+09-20 18:33:03.593 28814 11684 I LocationServiceManagerImpl: LocationUpdate: Skipped WithInThreshold request with Trigger:selfLocationRequest [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:253]
+09-20 18:33:03.648 28814 28911 V CLogger : needsRotation false
+09-20 18:33:03.974 28814 11528 I okhttp.OkHttpClient: <-- 400 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (1099ms, 77-byte body)
+09-20 18:33:03.974 28814 11555 I okhttp.OkHttpClient: <-- 304 https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/auth-feature-mapping_v2.json (1025ms, 0-byte body)
+09-20 18:33:03.974 28814 11571 I okhttp.OkHttpClient: <-- 304 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/mappcontent/v6/configs?domain=friscoParentalControl (976ms, 0-byte body)
+09-20 18:33:03.975 28814 11846 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/auth/frisco/mappcontent/v6/configs?domain=frisco-iam
+09-20 18:33:03.980 28814 11528 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/frisco/frisco-iam-device-auth/v5/user/auth/setting (111-byte body)
+09-20 18:33:03.996 28814 11523 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/safety/fam/pet-tracker/v6/sessions (1136ms, 2-byte body)
+09-20 18:33:03.997 28814 11558 I okhttp.OkHttpClient: <-- 304 https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/fam_feature_permissions_v5.json (1051ms, 0-byte body)
+09-20 18:33:04.015 28814 11557 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/frisco/commsplatform/v5/profiles/pubnubConfiguration (1065ms, 2311-byte body)
+09-20 18:33:04.016 28814 11559 I okhttp.OkHttpClient: <-- 304 https://app-config.prd.vsf.aws.tpd-soe.com/sf/v1/prd/fam_devicetype_feature_support_v2.json (1050ms, 0-byte body)
+09-20 18:33:04.060 28814 11559 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/comms/frisco/v6/notifications/unreadCount?productType=VSF&productType=FAM&notificationType=displayable&notificationType=displayableV2&notificationType=displayableV3
+09-20 18:33:04.069 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 20MB AllocSpace bytes, 226(13MB) LOS objects, 5% free, 117MB/123MB, paused 14.330ms,19.689ms total 670.340ms
+09-20 18:33:04.074 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/safety/fam/pet-tracker/v6/sessions
+09-20 18:33:04.109 28814 28814 D ManageContactUtil: printDateFromTime: 2026-09-20 18:33:04
+09-20 18:33:04.118 28814 11528 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/frisco/frisco-iam-device-auth/v5/user/auth/setting (138ms, 18-byte body)
+09-20 18:33:04.120 28814 11523 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v8/accounts/userprofiles
+09-20 18:33:04.235 28814 11846 I okhttp.OkHttpClient: <-- 304 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/mappcontent/v6/configs?domain=frisco-iam (260ms, 0-byte body)
+09-20 18:33:04.239 28814 11528 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (424-byte body)
+09-20 18:33:04.312 28814 28814 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+09-20 18:33:04.353 28814 28814 W BgTripDetector: (2) Dropping duplicate 38 com.cmtelematics.action.ACTION_LOCATION_RECEIVED (1006)
+09-20 18:33:04.354 28814 28911 V CLogger : needsRotation false
+09-20 18:33:04.359 28814 11557 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/safety/fam/pet-tracker/v6/sessions (285ms, 2-byte body)
+09-20 18:33:04.360 28814 28913 E Apptentive: [SDK Queue] [CONVERSATION] Invalid pushProvider: 4
+09-20 18:33:04.360 28814 11846 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (283-byte body)
+09-20 18:33:04.428 28814 28814 I ImeFocusController: onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+09-20 18:33:04.429 28814 28814 I ImeFocusController: onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+09-20 18:33:04.467 28814 11528 I okhttp.OkHttpClient: <-- 400 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (228ms, 77-byte body)
+09-20 18:33:04.468 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/location/vsf/location/v5/flight/settings
+09-20 18:33:04.491 28814 28814 D LocationServiceProviderImpl: GetCurrentLocation Success: Location[fused 34.199468,-84.157016 hAcc=17.062 et=+2d19h57m27s19ms alt=326.6000061035156 vAcc=0.5938315] priority: 100
+09-20 18:33:04.492 28814 11686 D LocationServiceProviderImpl: ✅ First location has excellent accuracy (17.062m < 50m), skipping retry
+09-20 18:33:04.492 28814 11686 I LocationServiceManagerImpl: LocationUpdate: received getCurrentLocation source: App-currentHigh [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:118]
+09-20 18:33:04.493 28814 11686 I LocationServiceManagerImpl: LocationUpdate: FB: Sending current valid location [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:289]
+09-20 18:33:04.614 28814 11846 I okhttp.OkHttpClient: <-- 400 https://api.prd.vsf.aws.vz-connect.com/auth/frisco/frisco-iam-device-auth/v5/user/login/audit (253ms, 77-byte body)
+09-20 18:33:04.618 28814 11528 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/location/vsf/location/v5/flight/settings
+09-20 18:33:04.618 28814 11567 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/servicecatalog/fam/servicescatalog/v6/eligibleservices (1648ms, 3139-byte body)
+09-20 18:33:04.620 28814 11523 I okhttp.OkHttpClient: <-- 304 https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v8/accounts/userprofiles (499ms, 0-byte body)
+09-20 18:33:04.621 28814 11559 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/comms/frisco/v6/notifications/unreadCount?productType=VSF&productType=FAM&notificationType=displayable&notificationType=displayableV2&notificationType=displayableV3 (561ms, 11-byte body)
+09-20 18:33:04.659 28814 28814 I FIAM.Display: Unbinding from activity: com.verizon.familybase.dashboard.DashboardActivity
+09-20 18:33:04.659 28814 28814 I FIAM.Headless: Removing display event component
+09-20 18:33:04.668 28814 28838 D SessionLifecycleClient: Sending lifecycle 2 to service
+09-20 18:33:04.687 28814 28986 D SessionLifecycleService: Activity backgrounding at 134841163
+09-20 18:33:04.713 28814 11692 D SensorManager: unregisterListener
+09-20 18:33:04.720 28814 28814 I VRI[DashboardActivity]@43fd4d9: stopped(true) old = false
+09-20 18:33:04.720 28814 28814 D VRI[DashboardActivity]@43fd4d9: WindowStopped on com.verizon.familybase.parent/com.verizon.familybase.dashboard.DashboardActivity set to true
+09-20 18:33:04.721 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:04.765 28814 11557 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/location/vsf/location/v5/flight/settings (296ms, 0-byte body)
+09-20 18:33:04.822 28814 28814 D InputTransport: Input channel destroyed: 'ClientS', fd=665
+09-20 18:33:04.822 28814 28814 D BBA2    : setIsFg isFg = false; delayValue 5000ms
+09-20 18:33:04.842 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:04.861 28814 28814 I VRI[DashboardActivity]@43fd4d9: Relayout returned: old=(0,0,1080,2316) new=(0,0,1080,2316) relayoutAsync=false req=(1080,2316)4 dur=16 res=0x2 s={false 0x0} ch=false seqId=0
+09-20 18:33:04.861 28814 28814 D VRI[DashboardActivity]@43fd4d9: Not drawing due to not visible. Reason=View.INVISIBLE
+09-20 18:33:04.882 28814 28814 I VRI[DashboardActivity]@43fd4d9: handleAppVisibility mAppVisible = true visible = false
+09-20 18:33:04.898 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:04.910 28814 28814 I VRI[DashboardActivity]@43fd4d9: Relayout returned: old=(0,0,1080,2316) new=(0,0,1080,2316) relayoutAsync=false req=(1080,2316)8 dur=11 res=0x0 s={false 0x0} ch=false seqId=0
+09-20 18:33:04.911 28814 28814 D BBA2    : setIsFg isFg = false; delayValue 5000ms
+09-20 18:33:04.933 28814 11678 D SensorManager: registerListener :: 111, Rotation Vector  Non-wakeup, 100000, 0, 
+09-20 18:33:04.946 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/callandtext/frisco/callandtext/v7/activity/summary?startDate=2026-09-20T00%3A00%3A00.000000Z&endDate=2026-09-20T23%3A59%3A59.999000Z&summaryOnly=true&activityType=call%2Ctext&timezone=preferred&betaProviders=RCS%2CGIZMO
+09-20 18:33:04.981 28814 11567 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/tracker/fam/v1/pet/activity
+09-20 18:33:05.044 28814 11699 W milybase.parent: Weak pointer dereference blocked for 27 milliseconds.
+09-20 18:33:05.044 28814 11918 W milybase.parent: Weak pointer dereference blocked for 25 milliseconds.
+09-20 18:33:05.044 28814 28814 W milybase.parent: Weak pointer dereference blocked for 22 milliseconds.
+09-20 18:33:05.044 28814 28830 W milybase.parent: Weak pointer dereference blocked for 26 milliseconds.
+09-20 18:33:05.045 28814 28894 W milybase.parent: Weak pointer dereference blocked for 16 milliseconds.
+09-20 18:33:05.045 28814 28897 W milybase.parent: Weak pointer dereference blocked for 23 milliseconds.
+09-20 18:33:05.049 28814 28909 W milybase.parent: Weak pointer dereference blocked for 20 milliseconds.
+09-20 18:33:05.086 28814 28827 I milybase.parent: Waiting for a blocking GC ProfileSaver
+09-20 18:33:05.146 28814 11557 I okhttp.OkHttpClient: <-- 404 https://api.prd.vsf.aws.vz-connect.com/callandtext/frisco/callandtext/v7/activity/summary?startDate=2026-09-20T00%3A00%3A00.000000Z&endDate=2026-09-20T23%3A59%3A59.999000Z&summaryOnly=true&activityType=call%2Ctext&timezone=preferred&betaProviders=RCS%2CGIZMO (200ms, 150-byte body)
+09-20 18:33:05.173 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v5/accounts/userprofiles/subscriptions
+09-20 18:33:05.209 28814 11567 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/tracker/fam/v1/pet/activity (227ms, 6464-byte body)
+09-20 18:33:05.244 28814 11567 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/account/frisco/userprofile-management/v6/accounts/userprofiles/images
+09-20 18:33:05.303 28814 11523 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/tracker/fam/v1/pet/rest
+09-20 18:33:05.381 28814 11559 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v5/userprofiles/recommendations
+09-20 18:33:05.385 28814 28911 V CLogger : needsRotation false
+09-20 18:33:05.460 28814 11523 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/tracker/fam/v1/pet/rest (156ms, 2419-byte body)
+09-20 18:33:05.552 28814 11567 I okhttp.OkHttpClient: <-- 304 https://api.prd.vsf.aws.vz-connect.com/account/frisco/userprofile-management/v6/accounts/userprofiles/images (307ms, 0-byte body)
+09-20 18:33:05.631 28814 28814 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda16@9d96e0f
+09-20 18:33:05.646 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:05.646 28814 28814 D ViewRootImpl: Skipping stats log for color mode
+09-20 18:33:05.646 28814 28814 I VRI[MainActivity]@fad523c: dispatchDetachedFromWindow
+09-20 18:33:05.653 28814 28814 D InputTransport: Input channel destroyed: 'f4d1ffa', fd=333
+09-20 18:33:05.663 28814 11559 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v5/userprofiles/recommendations (282ms, 2630-byte body)
+09-20 18:33:05.680 28814 11683 D SensorManager: unregisterListener
+09-20 18:33:05.761 28814 28819 I milybase.parent: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 168(25MB) LOS objects, 29% free, 115MB/163MB, paused 28.301ms,23.606ms total 1.686s
+09-20 18:33:05.761 28814 28827 I milybase.parent: WaitForGcToComplete blocked ProfileSaver on Background for 675.254ms
+09-20 18:33:05.777 28814 28820 D InputTransport: Input channel destroyed: 'ClientS', fd=402
+09-20 18:33:05.869 28814 11559 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause
+09-20 18:33:05.878 28814 11567 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device
+09-20 18:33:05.906 28814 11523 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause
+09-20 18:33:06.043 28814 28814 D VZMapView: onDestroy
+09-20 18:33:06.083 28814 11528 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/location/vsf/location/v5/flight/settings (1465ms, 0-byte body)
+09-20 18:33:06.084 28814 11846 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device
+09-20 18:33:06.089 28814 11557 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/account/fam/userprofile-management/v5/accounts/userprofiles/subscriptions (915ms, 0-byte body)
+09-20 18:33:06.089 28814 11528 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v5/profiles/devices/consent
+09-20 18:33:06.096 28814 11567 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device (217ms, 0-byte body)
+09-20 18:33:06.096 28814 11557 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v6/web-app-activity/insights?timezone=EST&usageType=profile&categorySupported=v6
+09-20 18:33:06.096 28814 11559 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause (227ms, 0-byte body)
+09-20 18:33:06.098 28814 11846 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device (13ms, 0-byte body)
+09-20 18:33:06.098 28814 11523 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause (192ms, 0-byte body)
+09-20 18:33:06.098 28814 11567 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause
+09-20 18:33:06.098 28814 11846 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause
+09-20 18:33:06.099 28814 11559 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device
+09-20 18:33:06.101 28814 11559 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device (2ms, 0-byte body)
+09-20 18:33:06.101 28814 11523 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device
+09-20 18:33:06.103 28814 11567 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause (4ms, 0-byte body)
+09-20 18:33:06.104 28814 11523 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/vsf/tamper/v6/view/getDeviceShadowDetails?featureIds=7011&featureIds=7023&featureIds=7001&featureIds=7022&retrieveLevel=device (2ms, 0-byte body)
+09-20 18:33:06.104 28814 11559 I okhttp.OkHttpClient: --> GET https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v6/web-app-activity/insights?timezone=EST&usageType=profile&categorySupported=v6
+09-20 18:33:06.105 28814 11846 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/parental-control/frisco/v6/device/pause (7ms, 0-byte body)
+09-20 18:33:06.107 28814 11528 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v5/profiles/devices/consent (17ms, 0-byte body)
+09-20 18:33:06.111 28814 11557 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v6/web-app-activity/insights?timezone=EST&usageType=profile&categorySupported=v6 (15ms, 0-byte body)
+09-20 18:33:06.112 28814 11559 I okhttp.OkHttpClient: <-- 500 Unexpected error: Canceled https://api.prd.vsf.aws.vz-connect.com/frisco/parental-control/v6/web-app-activity/insights?timezone=EST&usageType=profile&categorySupported=v6 (7ms, 0-byte body)
+09-20 18:33:06.149 28814 28814 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda16@3984639
+09-20 18:33:06.157 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:33:06.157 28814 28814 I VRI[DashboardActivity]@43fd4d9: dispatchDetachedFromWindow
+09-20 18:33:06.161 28814 28814 D InputTransport: Input channel destroyed: 'cc314d1', fd=380
+09-20 18:33:06.190 28814 28814 I Choreographer: Skipped 76 frames!  The application may be doing too much work on its main thread.
+09-20 18:33:06.205 28814 28911 V CLogger : needsRotation false
+09-20 18:33:06.312 28814 11686 I PNM::PubnubManagerImpl: ::performPublish::start [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:229]
+09-20 18:33:06.514 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 17MB AllocSpace bytes, 395(35MB) LOS objects, 33% free, 95MB/143MB, paused 4.731ms,17.537ms total 258.681ms
+09-20 18:33:06.539 28814  4126 I PNM::PubnubManagerImpl: ::performPublish::first attempt SUCCESS [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:390]
+09-20 18:33:06.539 28814  4126 I PNM::PubnubManagerImpl: ::performPublish::app in background, scheduling RetireInstance [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:906]
+09-20 18:33:06.539 28814  4126 I PNM::PubnubManagerImpl: ::performPublish::complete success=true [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:950]
+09-20 18:33:06.541 28814 11686 I LocationServiceManagerImpl: LocationUpdate: PubNub Published status: PubNubPublishResult(isSuccess=true, statusCode=200, timeToken=17899435866372346, pubnubError=null) publish PubNubFeature:LOCATION, accountId=3751165 [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:447]
+09-20 18:33:06.985 28814 11527 I FA      : Application backgrounded at: timestamp_millis: 1789943584983
+09-20 18:33:09.418 28814 11559 I okhttp.OkHttpClient: --> PUT https://api.prd.vsf.aws.vz-connect.com/frisco/commsplatform/v5/profiles/pushToken (236-byte body)
+09-20 18:33:09.661 28814 11559 I okhttp.OkHttpClient: <-- 200 https://api.prd.vsf.aws.vz-connect.com/frisco/commsplatform/v5/profiles/pushToken (241ms, 914-byte body)
+09-20 18:33:14.274 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244654089956421
+09-20 18:33:14.274 28814 11699 D FlightLandingDetector: [acc] Checking 887 samples
+09-20 18:33:14.274 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244650650593817, value=9.7835455)
+09-20 18:33:14.301 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:33:14.301 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:33:14.301 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244657290898244
+09-20 18:33:14.301 28814 11699 D FlightLandingDetector: [acc] Checking 331 samples
+09-20 18:33:14.301 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244650650593817, value=9.7835455)
+09-20 18:33:14.303 28814 11699 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:33:36.236 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:33:44.233 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244662116522931
+09-20 18:33:44.234 28814 11699 D FlightLandingDetector: [acc] Checking 335 samples
+09-20 18:33:44.234 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244658915314598, value=9.899541)
+09-20 18:33:44.234 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:33:44.234 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:33:44.235 28814 11699 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:33:44.235 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244687152481525
+09-20 18:33:44.235 28814 11699 D FlightLandingDetector: [acc] Checking 336 samples
+09-20 18:33:44.235 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244662116522931, value=9.907655)
+09-20 18:33:44.235 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:33:44.235 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:33:44.236 28814 11683 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:34:04.027 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 244706988060406
+09-20 18:34:04.028 28814 11686 D FlightLandingDetector: [acc] Checking 340 samples
+09-20 18:34:04.028 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244689158886837, value=9.918075)
+09-20 18:34:04.028 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:04.028 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:04.028 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:04.029 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:04.031 28814 11686 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:34:05.028 28814 28911 V CLogger : needsRotation false
+09-20 18:34:35.061 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:34:35.462 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244713625884885
+09-20 18:34:35.462 28814 11699 D FlightLandingDetector: [acc] Checking 349 samples
+09-20 18:34:35.462 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244709852183531, value=9.917095)
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.463 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.464 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:34:35.464 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:34:35.465 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 244732207916031
+09-20 18:34:35.465 28814 11682 D FlightLandingDetector: [acc] Checking 349 samples
+09-20 18:34:35.465 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244709852183531, value=9.917095)
+09-20 18:34:35.465 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.465 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.465 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.466 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.466 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.466 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.466 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:34:35.466 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:34:35.467 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244738417013739
+09-20 18:34:35.467 28814 11699 D FlightLandingDetector: [acc] Checking 349 samples
+09-20 18:34:35.467 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244709852183531, value=9.917095)
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.467 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:34:35.468 28814 11682 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:35:04.966 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 244746201881604
+09-20 18:35:04.966 28814 11682 D FlightLandingDetector: [acc] Checking 351 samples
+09-20 18:35:04.966 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244739849705302, value=9.915345)
+09-20 18:35:04.966 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.966 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.966 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.966 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:35:04.967 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:35:04.967 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 244767932986320
+09-20 18:35:04.967 28814 11682 D FlightLandingDetector: [acc] Checking 351 samples
+09-20 18:35:04.967 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244739849705302, value=9.915345)
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.967 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.968 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.968 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.968 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.968 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:04.968 28814  3981 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:35:05.490 28814 28911 V CLogger : needsRotation false
+09-20 18:35:05.873 28814 28911 V CLogger : needsRotation false
+09-20 18:35:06.968 28814 12370 D FlightLandingDetector: [acc] Checking 359 samples
+09-20 18:35:06.968 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244769936732727, value=9.929197)
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.969 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.970 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.970 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.970 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.970 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:06.971 28814 12370 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:35:10.238 28814 28819 I milybase.parent: Background concurrent mark compact GC freed 33MB AllocSpace bytes, 578(27MB) LOS objects, 40% free, 71MB/119MB, paused 9.974ms,16.251ms total 756.786ms
+09-20 18:35:10.240 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:35:10.240 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:35:10.241 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:35:10.241 28814 28955 D HWUI    : CacheManager::trimMemory(20)
+09-20 18:35:15.627 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 244776760911685
+09-20 18:35:15.627 28814 12370 D FlightLandingDetector: [acc] Checking 367 samples
+09-20 18:35:15.627 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244772558974654, value=9.937136)
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.627 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:35:15.628 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:35:15.628 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 244778575654914
+09-20 18:35:15.628 28814 12370 D FlightLandingDetector: [acc] Checking 367 samples
+09-20 18:35:15.628 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244772558974654, value=9.937136)
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.628 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:15.629 28814  4126 V FlightLandingDetector: End of buffer could contain takeoff roll, next check will be scheduled sooner
+09-20 18:35:35.892 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:35:46.136 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 244785452117102
+09-20 18:35:46.137 28814  3981 D FlightLandingDetector: [acc] Checking 371 samples
+09-20 18:35:46.137 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244780867328300, value=9.909075)
+09-20 18:35:46.137 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.137 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.137 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.137 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.138 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:35:46.139 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:35:46.139 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:35:46.139 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 244809090783039
+09-20 18:35:46.139 28814 11683 D FlightLandingDetector: [acc] Checking 16 samples
+09-20 18:35:46.140 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244780867328300, value=9.909075)
+09-20 18:36:05.827 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 244814104765643
+09-20 18:36:05.827 28814 12370 D FlightLandingDetector: [acc] Checking 17 samples
+09-20 18:36:05.827 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244809090783039, value=9.915372)
+09-20 18:36:05.828 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.828 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.828 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:36:05.828 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:36:05.828 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 244823416156581
+09-20 18:36:05.828 28814 12370 D FlightLandingDetector: [acc] Checking 17 samples
+09-20 18:36:05.828 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244809090783039, value=9.915372)
+09-20 18:36:05.828 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.828 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.830 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 244825803911975
+09-20 18:36:05.831 28814  3981 D FlightLandingDetector: [acc] Checking 22 samples
+09-20 18:36:05.831 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244823607165956, value=9.917728)
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:36:05.831 28814  3981 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:36:05.831 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 244828812227756
+09-20 18:36:05.831 28814  3981 D FlightLandingDetector: [acc] Checking 22 samples
+09-20 18:36:05.831 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244823607165956, value=9.917728)
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.831 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:05.832 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:06.751 28814 28911 V CLogger : needsRotation false
+09-20 18:36:11.930 28814 28911 V CLogger : needsRotation false
+09-20 18:36:41.949 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:36:41.969 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 244841272431662
+09-20 18:36:41.969 28814 11698 D FlightLandingDetector: [acc] Checking 33 samples
+09-20 18:36:41.969 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244836879175725, value=9.91915)
+09-20 18:36:41.969 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.970 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.970 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.970 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.970 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.970 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:36:41.971 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:36:41.971 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:36:41.971 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 244849294376714
+09-20 18:36:41.972 28814 11686 D FlightLandingDetector: [acc] Checking 12 samples
+09-20 18:36:41.972 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244836879175725, value=9.91915)
+09-20 18:36:41.973 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:36:41.973 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:36:41.973 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 244854022047808
+09-20 18:36:41.973 28814 12370 D FlightLandingDetector: [acc] Checking 12 samples
+09-20 18:36:41.973 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244836879175725, value=9.91915)
+09-20 18:36:41.974 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:36:41.974 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:36:41.974 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 244864958161246
+09-20 18:36:41.975 28814 11698 D FlightLandingDetector: [acc] Checking 12 samples
+09-20 18:36:41.975 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244836879175725, value=9.91915)
+09-20 18:37:06.705 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 244867059393121
+09-20 18:37:06.705 28814 11686 D FlightLandingDetector: [acc] Checking 13 samples
+09-20 18:37:06.705 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244864958161246, value=9.914776)
+09-20 18:37:06.706 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:37:06.706 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:37:06.706 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 244886351330493
+09-20 18:37:06.706 28814 11686 D FlightLandingDetector: [acc] Checking 13 samples
+09-20 18:37:06.706 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244864958161246, value=9.914776)
+09-20 18:37:06.706 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:37:06.706 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:37:06.707 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 244889694265441
+09-20 18:37:06.707 28814 11686 D FlightLandingDetector: [acc] Checking 13 samples
+09-20 18:37:06.707 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244864958161246, value=9.914776)
+09-20 18:37:13.084 28814 28911 V CLogger : needsRotation false
+09-20 18:37:22.160 28814 28814 D WM-DelayedWorkTracker: Scheduling work 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:37:22.160 28814 28814 D WM-GreedyScheduler: Starting work for 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:37:22.170 28814 28964 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=846e042e-1aa7-4f80-aaef-45381e6a4215, generation=0)
+09-20 18:37:22.184 28814 28814 D WM-WorkerWrapper: Starting work for com.verizon.familybase.datacachinglibrary.CacheExpiryWorker
+09-20 18:37:22.190 28814 28964 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=846e042e-1aa7-4f80-aaef-45381e6a4215, tags={ com.verizon.familybase.datacachinglibrary.CacheExpiryWorker } ]
+09-20 18:37:22.196 28814 28814 D WM-Processor: Processor 846e042e-1aa7-4f80-aaef-45381e6a4215 executed; reschedule = false
+09-20 18:37:22.206 28814 28964 D WM-GreedyScheduler: Cancelling work ID 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:37:22.213 28814 28964 D WM-SystemJobScheduler: Scheduling work ID 846e042e-1aa7-4f80-aaef-45381e6a4215Job ID 117
+09-20 18:37:43.114 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:37:43.134 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244901773944191
+09-20 18:37:43.134 28814 11699 D FlightLandingDetector: [acc] Checking 25 samples
+09-20 18:37:43.134 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244897285246222, value=9.913242)
+09-20 18:37:43.136 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.136 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.136 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.136 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.138 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:37:43.138 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:37:43.138 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244926127583618
+09-20 18:37:43.138 28814 11699 D FlightLandingDetector: [acc] Checking 25 samples
+09-20 18:37:43.138 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244897285246222, value=9.913242)
+09-20 18:37:43.138 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.138 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.138 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:37:43.139 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.577 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 244933194469035
+09-20 18:38:07.577 28814 11682 D FlightLandingDetector: [acc] Checking 27 samples
+09-20 18:38:07.577 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244926891580493, value=9.913255)
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.578 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:38:07.578 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:38:07.578 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244950574389636
+09-20 18:38:07.579 28814 11699 D FlightLandingDetector: [acc] Checking 27 samples
+09-20 18:38:07.579 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244926891580493, value=9.913255)
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:07.579 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:08.450 28814 28911 V CLogger : needsRotation false
+09-20 18:38:08.482 28814 28911 V CLogger : needsRotation false
+09-20 18:38:14.242 28814 28911 V CLogger : needsRotation false
+09-20 18:38:21.995 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 35MB AllocSpace bytes, 437(13MB) LOS objects, 40% free, 71MB/119MB, paused 2.405ms,13.827ms total 237.180ms
+09-20 18:38:44.262 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:38:44.614 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244963712161511
+09-20 18:38:44.614 28814 11699 D FlightLandingDetector: [acc] Checking 391 samples
+09-20 18:38:44.614 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244959558186615, value=9.921623)
+09-20 18:38:44.614 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.614 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.614 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.615 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.615 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.615 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.615 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.615 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.616 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:38:44.616 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:38:44.617 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 244978083919272
+09-20 18:38:44.617 28814 11699 D FlightLandingDetector: [acc] Checking 391 samples
+09-20 18:38:44.617 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244959558186615, value=9.921623)
+09-20 18:38:44.617 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.617 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.617 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.617 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.618 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.618 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.618 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.618 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.619 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:38:44.619 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:38:44.619 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 244987585785469
+09-20 18:38:44.619 28814 11682 D FlightLandingDetector: [acc] Checking 391 samples
+09-20 18:38:44.619 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244959558186615, value=9.921623)
+09-20 18:38:44.619 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:38:44.620 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.402 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 244990641848803
+09-20 18:39:08.402 28814 11698 D FlightLandingDetector: [acc] Checking 395 samples
+09-20 18:39:08.402 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244988063260886, value=9.908224)
+09-20 18:39:08.402 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.402 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.402 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.402 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.402 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.403 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:39:08.403 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:39:08.403 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245011363214041
+09-20 18:39:08.403 28814 11698 D FlightLandingDetector: [acc] Checking 395 samples
+09-20 18:39:08.403 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=244988063260886, value=9.908224)
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:08.404 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.988 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245015612510291
+09-20 18:39:14.988 28814 11698 D FlightLandingDetector: [acc] Checking 399 samples
+09-20 18:39:14.988 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245013368514978, value=9.905112)
+09-20 18:39:14.988 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.988 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.988 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.988 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.988 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.989 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.990 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:39:14.990 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:39:14.991 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245017952090187
+09-20 18:39:14.991 28814 11682 D FlightLandingDetector: [acc] Checking 399 samples
+09-20 18:39:14.991 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245013368514978, value=9.905112)
+09-20 18:39:14.991 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:14.992 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:16.924 28814 28911 V CLogger : needsRotation false
+09-20 18:39:44.752 28814 28814 D WM-DelayedWorkTracker: Scheduling work 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:39:44.753 28814 28814 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:39:44.754 28814 28959 D WM-ConstraintTracker: BatteryChargingTracker: initial state = false
+09-20 18:39:44.754 28814 28959 D WM-BrdcstRcvrCnstrntTrc: BatteryChargingTracker: registering receiver
+09-20 18:39:44.758 28814 28959 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=454a7236-69a1-43fc-b7ec-27506ee791fe, generation=0)
+09-20 18:39:46.934 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:39:46.970 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245025683994457
+09-20 18:39:46.970 28814 11683 D FlightLandingDetector: [acc] Checking 404 samples
+09-20 18:39:46.970 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245019954652843, value=9.928237)
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.971 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.973 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:39:46.973 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:39:46.973 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245034278225395
+09-20 18:39:46.973 28814 11682 D FlightLandingDetector: [acc] Checking 404 samples
+09-20 18:39:46.973 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245019954652843, value=9.928237)
+09-20 18:39:46.973 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.974 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.975 28814  3981 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:39:46.975 28814  3981 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:39:46.975 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245049937257582
+09-20 18:39:46.976 28814  3981 D FlightLandingDetector: [acc] Checking 404 samples
+09-20 18:39:46.976 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245019954652843, value=9.928237)
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:39:46.976 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.304 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245058243853103
+09-20 18:40:09.304 28814 11682 D FlightLandingDetector: [acc] Checking 406 samples
+09-20 18:40:09.304 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245051846902062, value=9.920144)
+09-20 18:40:09.304 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.304 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.304 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.304 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.305 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.306 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:40:09.306 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:40:09.306 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245072279019798
+09-20 18:40:09.306 28814 11682 D FlightLandingDetector: [acc] Checking 406 samples
+09-20 18:40:09.306 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245051846902062, value=9.920144)
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:09.307 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.969 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245077291450996
+09-20 18:40:16.970 28814  3981 D FlightLandingDetector: [acc] Checking 427 samples
+09-20 18:40:16.970 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245074283975944, value=9.918631)
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:40:16.971 28814  3981 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:40:16.971 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245079964922090
+09-20 18:40:16.971 28814  3981 D FlightLandingDetector: [acc] Checking 427 samples
+09-20 18:40:16.971 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245074283975944, value=9.918631)
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:16.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:18.929 28814 28911 V CLogger : needsRotation false
+09-20 18:40:48.960 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:40:48.969 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245085022635267
+09-20 18:40:48.970 28814  3981 D FlightLandingDetector: [acc] Checking 431 samples
+09-20 18:40:48.970 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245081967483496, value=9.930006)
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.970 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.971 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.972 28814 12541 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:40:48.972 28814 12541 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:40:48.972 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245096289047976
+09-20 18:40:48.972 28814 12541 D FlightLandingDetector: [acc] Checking 431 samples
+09-20 18:40:48.972 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245081967483496, value=9.930006)
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.973 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.974 28814 12541 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:40:48.974 28814 12541 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:40:48.974 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245110943597455
+09-20 18:40:48.975 28814 12541 D FlightLandingDetector: [acc] Checking 431 samples
+09-20 18:40:48.975 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245081967483496, value=9.930006)
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.975 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.976 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:40:48.976 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:40:48.977 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245111945900996
+09-20 18:40:48.977 28814 11698 D FlightLandingDetector: [acc] Checking 431 samples
+09-20 18:40:48.977 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245081967483496, value=9.930006)
+09-20 18:40:48.977 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.977 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.977 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.977 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.977 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:40:48.978 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245124308906153
+09-20 18:41:10.158 28814  3981 D FlightLandingDetector: [acc] Checking 432 samples
+09-20 18:41:10.158 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245111945900996, value=9.918108)
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.158 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.159 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:41:10.160 28814  3981 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:41:10.160 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245133139633734
+09-20 18:41:10.160 28814  3981 D FlightLandingDetector: [acc] Checking 432 samples
+09-20 18:41:10.160 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245111945900996, value=9.918108)
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.160 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.161 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.161 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:10.161 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.985 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245137435680817
+09-20 18:41:18.986 28814 11682 D FlightLandingDetector: [acc] Checking 435 samples
+09-20 18:41:18.986 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245135144453734, value=9.90846)
+09-20 18:41:18.986 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.986 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.986 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.986 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.986 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.987 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.988 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.988 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.989 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:41:18.989 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:41:18.990 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245141970570140
+09-20 18:41:18.990 28814 11698 D FlightLandingDetector: [acc] Checking 435 samples
+09-20 18:41:18.990 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245135144453734, value=9.90846)
+09-20 18:41:18.990 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.990 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.990 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.990 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.990 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:18.991 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:20.942 28814 28911 V CLogger : needsRotation false
+09-20 18:41:29.209 28814 28819 I milybase.parent: Background concurrent mark compact GC freed 39MB AllocSpace bytes, 470(16MB) LOS objects, 43% free, 63MB/111MB, paused 10.039ms,18.550ms total 719.842ms
+09-20 18:41:50.961 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:41:50.986 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245149319554515
+09-20 18:41:50.987 28814 11686 D FlightLandingDetector: [acc] Checking 440 samples
+09-20 18:41:50.987 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245145930282380, value=9.914419)
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.987 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.988 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:41:50.989 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:41:50.989 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:41:50.989 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245170228121182
+09-20 18:41:50.990 28814 11682 D FlightLandingDetector: [acc] Checking 8 samples
+09-20 18:41:50.990 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245145930282380, value=9.914419)
+09-20 18:41:50.991 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:41:50.991 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:41:50.991 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245173951529515
+09-20 18:41:50.991 28814 11686 D FlightLandingDetector: [acc] Checking 8 samples
+09-20 18:41:50.991 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245145930282380, value=9.914419)
+09-20 18:42:10.992 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245176672530974
+09-20 18:42:10.992 28814 12370 D FlightLandingDetector: [acc] Checking 9 samples
+09-20 18:42:10.992 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245173951529515, value=9.914416)
+09-20 18:42:10.993 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:10.993 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:10.994 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:10.994 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:10.994 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245193954156368
+09-20 18:42:10.994 28814 11698 D FlightLandingDetector: [acc] Checking 9 samples
+09-20 18:42:10.994 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245173951529515, value=9.914416)
+09-20 18:42:10.994 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:10.994 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.991 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245201067028815
+09-20 18:42:20.991 28814 12370 D FlightLandingDetector: [acc] Checking 14 samples
+09-20 18:42:20.991 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245197629979284, value=9.914445)
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.992 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.993 28814  3981 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:20.993 28814  3981 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:20.993 28814  3981 D FlightLandingDetector: [acc] Gap in data or rogue event at 245203979084336
+09-20 18:42:20.994 28814  3981 D FlightLandingDetector: [acc] Checking 14 samples
+09-20 18:42:20.994 28814  3981 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245197629979284, value=9.914445)
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:20.994 28814  3981 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:22.082 28814 28911 V CLogger : needsRotation false
+09-20 18:42:52.113 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:42:52.138 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245207223904024
+09-20 18:42:52.138 28814 12370 D FlightLandingDetector: [acc] Checking 17 samples
+09-20 18:42:52.138 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245205123454128, value=9.93292)
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.138 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:42:52.140 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:52.140 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:52.140 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245219443814597
+09-20 18:42:52.140 28814 11683 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:42:52.140 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245205123454128, value=9.93292)
+09-20 18:42:52.142 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:52.142 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:52.143 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245219491553190
+09-20 18:42:52.143 28814 11683 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:42:52.143 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245205123454128, value=9.93292)
+09-20 18:42:52.144 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:52.144 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:52.144 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245232332581211
+09-20 18:42:52.144 28814 12370 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:42:52.144 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245205123454128, value=9.93292)
+09-20 18:42:52.145 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:42:52.145 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:42:52.146 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245235101271524
+09-20 18:42:52.146 28814 11683 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:42:52.146 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245205123454128, value=9.93292)
+09-20 18:43:11.870 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245239827026107
+09-20 18:43:11.870 28814 11683 D FlightLandingDetector: [acc] Checking 23 samples
+09-20 18:43:11.870 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245237487987461, value=9.913323)
+09-20 18:43:11.870 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:11.870 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:11.870 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:43:11.870 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:43:11.871 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245252047498271
+09-20 18:43:11.871 28814 11683 D FlightLandingDetector: [acc] Checking 23 samples
+09-20 18:43:11.871 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245237487987461, value=9.913323)
+09-20 18:43:11.871 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:11.871 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:11.871 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:43:11.871 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:43:11.872 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245254863761448
+09-20 18:43:11.872 28814 11682 D FlightLandingDetector: [acc] Checking 23 samples
+09-20 18:43:11.872 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245237487987461, value=9.913323)
+09-20 18:43:11.872 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:11.872 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:12.784 28814 28911 V CLogger : needsRotation false
+09-20 18:43:22.142 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245265125602906
+09-20 18:43:22.143 28814 12541 D FlightLandingDetector: [acc] Checking 386 samples
+09-20 18:43:22.143 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245263120990666, value=9.9113455)
+09-20 18:43:22.143 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:22.143 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:22.143 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:22.144 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:23.259 28814 28911 V CLogger : needsRotation false
+09-20 18:43:53.275 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:43:53.285 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245271949792489
+09-20 18:43:53.285 28814 12541 D FlightLandingDetector: [acc] Checking 392 samples
+09-20 18:43:53.285 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245267367651604, value=9.920056)
+09-20 18:43:53.286 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.286 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.286 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.286 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.286 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.287 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.288 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:43:53.288 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:43:53.288 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245288703417906
+09-20 18:43:53.289 28814 11682 D FlightLandingDetector: [acc] Checking 357 samples
+09-20 18:43:53.289 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245267367651604, value=9.920056)
+09-20 18:43:53.289 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.289 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.290 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:43:53.290 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:43:53.290 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245296244333114
+09-20 18:43:53.290 28814 11682 D FlightLandingDetector: [acc] Checking 357 samples
+09-20 18:43:53.290 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245267367651604, value=9.920056)
+09-20 18:43:53.291 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:43:53.291 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:12.724 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245298774152281
+09-20 18:44:12.724 28814 12541 D FlightLandingDetector: [acc] Checking 358 samples
+09-20 18:44:12.724 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245296244333114, value=9.906711)
+09-20 18:44:12.724 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:12.725 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:12.725 28814 12541 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:44:12.725 28814 12541 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:44:12.725 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245315718303664
+09-20 18:44:12.726 28814 12541 D FlightLandingDetector: [acc] Checking 358 samples
+09-20 18:44:12.726 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245296244333114, value=9.906711)
+09-20 18:44:12.726 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:12.726 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.306 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245321445777883
+09-20 18:44:23.306 28814 11683 D FlightLandingDetector: [acc] Checking 371 samples
+09-20 18:44:23.306 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245317770558872, value=9.916803)
+09-20 18:44:23.306 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.307 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.307 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.307 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.307 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.307 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.308 28814 13092 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:44:23.308 28814 13092 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:44:23.308 28814 13092 D FlightLandingDetector: [acc] Gap in data or rogue event at 245326266265122
+09-20 18:44:23.308 28814 13092 D FlightLandingDetector: [acc] Checking 371 samples
+09-20 18:44:23.308 28814 13092 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245317770558872, value=9.916803)
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.309 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:44:23.310 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:44:23.310 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245326313992727
+09-20 18:44:23.310 28814 11683 D FlightLandingDetector: [acc] Checking 371 samples
+09-20 18:44:23.310 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245317770558872, value=9.916803)
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:23.310 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:24.928 28814 28911 V CLogger : needsRotation false
+09-20 18:44:36.374 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 35MB AllocSpace bytes, 435(13MB) LOS objects, 43% free, 62MB/110MB, paused 2.632ms,14.459ms total 198.638ms
+09-20 18:44:54.966 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:44:54.986 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245330082748300
+09-20 18:44:54.987 28814 11699 D FlightLandingDetector: [acc] Checking 374 samples
+09-20 18:44:54.987 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245327935075018, value=9.93148)
+09-20 18:44:54.987 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.987 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.987 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.987 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.987 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.988 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:44:54.989 28814 11699 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:44:54.989 28814 11699 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:44:54.990 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245349317921164
+09-20 18:44:54.990 28814 11699 D FlightLandingDetector: [acc] Checking 4 samples
+09-20 18:44:54.990 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245327935075018, value=9.93148)
+09-20 18:44:54.991 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:44:54.991 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:44:54.991 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245357956751268
+09-20 18:44:54.991 28814 11698 D FlightLandingDetector: [acc] Checking 4 samples
+09-20 18:44:54.991 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245327935075018, value=9.93148)
+09-20 18:45:13.533 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245363970471581
+09-20 18:45:13.533 28814 12370 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:45:13.533 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245358290843664, value=9.917992)
+09-20 18:45:13.533 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:13.533 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:13.534 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:45:13.534 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:45:13.534 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245376475173016
+09-20 18:45:13.534 28814 12370 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:45:13.534 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245358290843664, value=9.917992)
+09-20 18:45:13.534 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:13.534 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:13.535 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:45:13.535 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:45:13.535 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245376522899422
+09-20 18:45:13.535 28814 12370 D FlightLandingDetector: [acc] Checking 6 samples
+09-20 18:45:13.535 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245358290843664, value=9.917992)
+09-20 18:45:13.535 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:13.535 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:24.999 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245380627713328
+09-20 18:45:24.999 28814 11698 D FlightLandingDetector: [acc] Checking 9 samples
+09-20 18:45:24.999 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245378527554214, value=9.915759)
+09-20 18:45:24.999 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:24.999 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:24.999 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:24.999 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:25.001 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:45:25.001 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:45:25.002 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245387977996609
+09-20 18:45:25.002 28814 11683 D FlightLandingDetector: [acc] Checking 9 samples
+09-20 18:45:25.002 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245378527554214, value=9.915759)
+09-20 18:45:25.002 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:25.002 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:25.002 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:25.002 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:26.942 28814 28911 V CLogger : needsRotation false
+09-20 18:45:56.961 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:45:56.981 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245395135273901
+09-20 18:45:56.981 28814 12370 D FlightLandingDetector: [acc] Checking 15 samples
+09-20 18:45:56.981 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245391794221297, value=9.915706)
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.982 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.983 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:45:56.983 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:45:56.984 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245404298746818
+09-20 18:45:56.984 28814 11699 D FlightLandingDetector: [acc] Checking 15 samples
+09-20 18:45:56.984 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245391794221297, value=9.915706)
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.984 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.986 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:45:56.986 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:45:56.986 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245419953843693
+09-20 18:45:56.986 28814 11683 D FlightLandingDetector: [acc] Checking 15 samples
+09-20 18:45:56.986 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245391794221297, value=9.915706)
+09-20 18:45:56.986 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.986 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.986 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.986 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.987 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:45:56.987 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245422588585359
+09-20 18:46:14.426 28814 11699 D FlightLandingDetector: [acc] Checking 16 samples
+09-20 18:46:14.426 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245419953843693, value=9.915588)
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.426 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:46:14.427 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:46:14.427 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245437384176691
+09-20 18:46:14.427 28814 11683 D FlightLandingDetector: [acc] Checking 16 samples
+09-20 18:46:14.427 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245419953843693, value=9.915588)
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:14.427 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.000 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245441536200597
+09-20 18:46:27.001 28814 12541 D FlightLandingDetector: [acc] Checking 22 samples
+09-20 18:46:27.001 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245439436378722, value=9.90985)
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.001 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.002 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.002 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.002 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.002 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.003 28814 13092 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:46:27.003 28814 13092 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:46:27.004 28814 13092 D FlightLandingDetector: [acc] Gap in data or rogue event at 245449983631587
+09-20 18:46:27.004 28814 13092 D FlightLandingDetector: [acc] Checking 22 samples
+09-20 18:46:27.004 28814 13092 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245439436378722, value=9.90985)
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.004 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.005 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.005 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.005 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:27.005 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:28.937 28814 28911 V CLogger : needsRotation false
+09-20 18:46:35.526 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245458524934087
+09-20 18:46:35.526 28814 11699 D FlightLandingDetector: [acc] Checking 26 samples
+09-20 18:46:35.526 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245451938392941, value=9.932048)
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.526 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.527 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.527 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.527 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:46:35.539 28814 28911 V CLogger : needsRotation false
+09-20 18:46:35.552 28814 28911 V CLogger : needsRotation false
+09-20 18:47:05.584 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:47:07.287 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245466121619816
+09-20 18:47:07.287 28814 12541 D FlightLandingDetector: [acc] Checking 205 samples
+09-20 18:47:07.287 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245462112349035, value=9.909994)
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.288 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:07.290 28814 13092 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:47:07.290 28814 13092 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:47:07.290 28814 13092 D FlightLandingDetector: [acc] Gap in data or rogue event at 245487264090577
+09-20 18:47:07.290 28814 13092 D FlightLandingDetector: [acc] Checking 183 samples
+09-20 18:47:07.290 28814 13092 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245462112349035, value=9.909994)
+09-20 18:47:07.291 28814 12541 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:47:07.291 28814 12541 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:47:07.291 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245490270750264
+09-20 18:47:07.292 28814 12541 D FlightLandingDetector: [acc] Checking 183 samples
+09-20 18:47:07.292 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245462112349035, value=9.909994)
+09-20 18:47:36.424 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245507881706254
+09-20 18:47:36.424 28814 11698 D FlightLandingDetector: [acc] Checking 184 samples
+09-20 18:47:36.424 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245490270750264, value=9.916263)
+09-20 18:47:36.425 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:36.425 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:36.426 28814 11682 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:47:36.426 28814 11682 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:47:36.426 28814 11682 D FlightLandingDetector: [acc] Gap in data or rogue event at 245519383619014
+09-20 18:47:36.426 28814 11682 D FlightLandingDetector: [acc] Checking 184 samples
+09-20 18:47:36.426 28814 11682 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245490270750264, value=9.916263)
+09-20 18:47:36.426 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:36.426 28814 11682 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:47:36.918 28814 28911 V CLogger : needsRotation false
+09-20 18:47:37.398 28814 28911 V CLogger : needsRotation false
+09-20 18:47:39.619 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 34MB AllocSpace bytes, 417(13MB) LOS objects, 43% free, 62MB/110MB, paused 3.100ms,13.702ms total 190.867ms
+09-20 18:48:07.430 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:48:08.302 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245524679838025
+09-20 18:48:08.302 28814 12370 D FlightLandingDetector: [acc] Checking 192 samples
+09-20 18:48:08.302 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245521386855577, value=9.932988)
+09-20 18:48:08.302 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.302 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.302 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.303 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.303 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.303 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.304 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:48:08.304 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:48:08.304 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245547395924877
+09-20 18:48:08.304 28814 11683 D FlightLandingDetector: [acc] Checking 192 samples
+09-20 18:48:08.305 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245521386855577, value=9.932988)
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.305 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.306 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:48:08.306 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:48:08.307 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245551261321960
+09-20 18:48:08.307 28814 12370 D FlightLandingDetector: [acc] Checking 192 samples
+09-20 18:48:08.307 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245521386855577, value=9.932988)
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:08.307 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.311 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245569299633418
+09-20 18:48:37.312 28814 12370 D FlightLandingDetector: [acc] Checking 203 samples
+09-20 18:48:37.312 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245552931616804, value=9.913236)
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.312 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:48:37.312 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:48:37.312 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245580275647689
+09-20 18:48:37.312 28814 12370 D FlightLandingDetector: [acc] Checking 203 samples
+09-20 18:48:37.312 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245552931616804, value=9.913236)
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:37.313 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:48:38.190 28814 28911 V CLogger : needsRotation false
+09-20 18:48:38.204 28814 28911 V CLogger : needsRotation false
+09-20 18:49:08.230 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:49:14.361 28814 13092 D FlightLandingDetector: [acc] Gap in data or rogue event at 245593455218418
+09-20 18:49:14.362 28814 13092 D FlightLandingDetector: [acc] Checking 567 samples
+09-20 18:49:14.362 28814 13092 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245589255761283, value=9.920985)
+09-20 18:49:14.362 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.362 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.362 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.362 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.362 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.363 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.363 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.363 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.363 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.363 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.364 28814 11683 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:49:14.364 28814 11683 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:49:14.365 28814 11683 D FlightLandingDetector: [acc] Gap in data or rogue event at 245617316687455
+09-20 18:49:14.365 28814 11683 D FlightLandingDetector: [acc] Checking 567 samples
+09-20 18:49:14.365 28814 11683 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245589255761283, value=9.920985)
+09-20 18:49:14.365 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.365 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.365 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.365 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.365 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.366 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.366 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.366 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.366 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:14.366 28814 11683 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.102 28814 12541 D FlightLandingDetector: [acc] Gap in data or rogue event at 245627242625632
+09-20 18:49:38.102 28814 12541 D FlightLandingDetector: [acc] Checking 569 samples
+09-20 18:49:38.102 28814 12541 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245617364406882, value=9.913196)
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 12541 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.103 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:49:38.103 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:49:38.104 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245641081932611
+09-20 18:49:38.104 28814 11698 D FlightLandingDetector: [acc] Checking 569 samples
+09-20 18:49:38.104 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245617364406882, value=9.913196)
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:38.104 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:49:39.010 28814 28911 V CLogger : needsRotation false
+09-20 18:49:52.833 28814 14183 D GeofenceBroadcastReceiver: #####Geofence: Geofence transition received. Location: Location[fused 34.199586,-84.157045 hAcc=6.779 et=+2d20h14m4s926ms alt=334.0401611328125 vAcc=8.893913 vel=0.0 sAcc=0.07061313] geofence: [Geofence[CIRCLE id:6915101_vsf_Kroger transitions:3 34.169636, -84.185242 411m, resp=0s, dwell=0ms, @9223372036854775807], Geofence[CIRCLE id:6915101_vsf_Tutoring transitions:3 34.239184, -84.193290 411m, resp=0s, dwell=0ms, @9223372036854775807], Geofence[CIRCLE id:6915101_vsf_debugOnlyGeofence transitions:3 0.000000, 0.000000 411m, resp=0s, dwell=0ms, @9223372036854775807], Geofence[CIRCLE id:6915101_vsf_Office transitions:3 34.055304, -84.277384 411m, resp=0s, dwell=0ms, @9223372036854775807]]
+09-20 18:49:52.923 28814 28814 D MyGeofenceReceiver: Self Geofence triggered ...
+09-20 18:49:52.959 28814 14183 D GeofenceBroadcastReceiver: #####Geofence: Geofence transition received. Location: Location[fused 34.199586,-84.157045 hAcc=6.779 et=+2d20h14m4s926ms alt=334.0401611328125 vAcc=8.893913 vel=0.0 sAcc=0.07061313] geofence: [Geofence[CIRCLE id:6915101_vsf_Home transitions:3 34.199571, -84.157064 411m, resp=0s, dwell=0ms, @9223372036854775807]]
+09-20 18:49:52.964 28814 28946 D WM-SystemJobScheduler: Scheduling work ID 275b796c-cfdf-4ffc-8645-1b61d7dba14cJob ID 118
+09-20 18:49:52.971 28814 28946 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:49:52.976 28814 28814 D MyLocationGeofenceHelper: Geofence successfully removed
+09-20 18:49:52.979 28814 28946 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:49:52.986 28814 28814 D MyLocationGeofenceHelper: Geofence successfully added. initTrigger=2
+09-20 18:49:52.991 28814 28959 D WM-Processor: Processor cancelling 275b796c-cfdf-4ffc-8645-1b61d7dba14c
+09-20 18:49:52.991 28814 28959 D WM-Processor: WorkerWrapper could not be found for 275b796c-cfdf-4ffc-8645-1b61d7dba14c
+09-20 18:49:53.004 28814 28959 D WM-GreedyScheduler: Cancelling work ID 275b796c-cfdf-4ffc-8645-1b61d7dba14c
+09-20 18:49:53.031 28814 28959 D WM-SystemJobScheduler: Scheduling work ID d5212abf-4599-4f37-b667-0db0daa270ffJob ID 119
+09-20 18:49:53.037 28814 28959 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:50:09.036 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:50:22.000 28814 28959 D WM-Processor: Processor cancelling d5212abf-4599-4f37-b667-0db0daa270ff
+09-20 18:50:22.001 28814 28959 D WM-Processor: WorkerWrapper could not be found for d5212abf-4599-4f37-b667-0db0daa270ff
+09-20 18:50:22.007 28814 11699 I ValidateGeofenceUseCase: #####Geofence: Publishing burst geofence after timer [r8-map-id-136e6c9babf6caedab32e6a2f38c83aac0fb638e5074c3a85ad90169d716374e:310]
+09-20 18:50:22.013 28814 28959 D WM-GreedyScheduler: Cancelling work ID d5212abf-4599-4f37-b667-0db0daa270ff
+09-20 18:50:22.019 28814 28959 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:50:22.084 28814 15726 I okhttp.OkHttpClient: --> POST https://api.prd.vsf.aws.vz-connect.com/vsf/location/v5/geofence/event (4524-byte body)
+09-20 18:50:22.781 28814 15726 I okhttp.OkHttpClient: <-- 201 https://api.prd.vsf.aws.vz-connect.com/vsf/location/v5/geofence/event (696ms, 21-byte body)
+09-20 18:50:29.651 28814 13092 D FlightLandingDetector: [acc] Gap in data or rogue event at 245668756649562
+09-20 18:50:29.652 28814 13092 D FlightLandingDetector: [acc] Checking 1103 samples
+09-20 18:50:29.653 28814 13092 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245663790614121, value=9.900407)
+09-20 18:50:29.653 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.653 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.653 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.653 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.654 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.655 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.655 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.655 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.656 28814 13092 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:50:29.659 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:50:29.659 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:50:29.659 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245692631411957
+09-20 18:50:29.659 28814 12370 D FlightLandingDetector: [acc] Checking 369 samples
+09-20 18:50:29.659 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245663790614121, value=9.900407)
+09-20 18:50:30.826 28814 28819 I milybase.parent: Background young concurrent mark compact GC freed 34MB AllocSpace bytes, 413(13MB) LOS objects, 42% free, 63MB/110MB, paused 2.425ms,17.007ms total 607.446ms
+09-20 18:50:53.024 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245700175160760
+09-20 18:50:53.024 28814 14183 D FlightLandingDetector: [acc] Checking 370 samples
+09-20 18:50:53.025 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245692631411957, value=9.921065)
+09-20 18:50:53.026 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:50:53.026 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:50:53.026 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245706954645655
+09-20 18:50:53.026 28814 12370 D FlightLandingDetector: [acc] Checking 370 samples
+09-20 18:50:53.026 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245692631411957, value=9.921065)
+09-20 18:50:53.027 28814 12370 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:50:53.027 28814 12370 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:50:53.028 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245713352234301
+09-20 18:50:53.028 28814 12370 D FlightLandingDetector: [acc] Checking 370 samples
+09-20 18:50:53.028 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245692631411957, value=9.921065)
+09-20 18:50:53.029 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:50:53.029 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:50:53.029 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245716025823051
+09-20 18:50:53.029 28814 14183 D FlightLandingDetector: [acc] Checking 370 samples
+09-20 18:50:53.029 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245692631411957, value=9.921065)
+09-20 18:50:53.760 28814 28911 V CLogger : needsRotation false
+09-20 18:50:54.928 28814 28911 V CLogger : needsRotation false
+09-20 18:51:24.943 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:51:25.083 28814 12370 D FlightLandingDetector: [acc] Gap in data or rogue event at 245727382969124
+09-20 18:51:25.083 28814 12370 D FlightLandingDetector: [acc] Checking 380 samples
+09-20 18:51:25.083 28814 12370 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245720938957635, value=9.913811)
+09-20 18:51:25.083 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.083 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.084 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.084 28814 12370 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.085 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:51:25.085 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:51:25.085 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245744805865218
+09-20 18:51:25.086 28814 11686 D FlightLandingDetector: [acc] Checking 380 samples
+09-20 18:51:25.086 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245720938957635, value=9.913811)
+09-20 18:51:25.086 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.086 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.086 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.086 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.087 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:51:25.087 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:51:25.088 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245748051674593
+09-20 18:51:25.088 28814 14183 D FlightLandingDetector: [acc] Checking 380 samples
+09-20 18:51:25.088 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245720938957635, value=9.913811)
+09-20 18:51:25.088 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.088 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.088 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:25.088 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.692 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245766858857510
+09-20 18:51:54.692 28814 11699 D FlightLandingDetector: [acc] Checking 382 samples
+09-20 18:51:54.692 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245748099405947, value=9.916821)
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.693 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.696 28814 11699 D FlightLandingDetector: [acc] Gap in data or rogue event at 245772825239385
+09-20 18:51:54.696 28814 11699 D FlightLandingDetector: [acc] Checking 387 samples
+09-20 18:51:54.696 28814 11699 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245767956700635, value=9.920134)
+09-20 18:51:54.696 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.696 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.696 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.696 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.696 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.697 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.697 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.697 28814 11699 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.697 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:51:54.697 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:51:54.698 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245777693841520
+09-20 18:51:54.698 28814 14183 D FlightLandingDetector: [acc] Checking 387 samples
+09-20 18:51:54.698 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245767956700635, value=9.920134)
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:54.698 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:51:55.645 28814 28911 V CLogger : needsRotation false
+09-20 18:51:55.652 28814 28911 V CLogger : needsRotation false
+09-20 18:52:22.196 28814 28814 D WM-DelayedWorkTracker: Scheduling work 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:52:22.197 28814 28814 D WM-GreedyScheduler: Starting work for 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:52:22.211 28814 28946 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=846e042e-1aa7-4f80-aaef-45381e6a4215, generation=0)
+09-20 18:52:22.221 28814 28814 D WM-WorkerWrapper: Starting work for com.verizon.familybase.datacachinglibrary.CacheExpiryWorker
+09-20 18:52:22.227 28814 28961 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=846e042e-1aa7-4f80-aaef-45381e6a4215, tags={ com.verizon.familybase.datacachinglibrary.CacheExpiryWorker } ]
+09-20 18:52:22.233 28814 28814 D WM-Processor: Processor 846e042e-1aa7-4f80-aaef-45381e6a4215 executed; reschedule = false
+09-20 18:52:22.246 28814 28961 D WM-GreedyScheduler: Cancelling work ID 846e042e-1aa7-4f80-aaef-45381e6a4215
+09-20 18:52:22.254 28814 28961 D WM-SystemJobScheduler: Scheduling work ID 846e042e-1aa7-4f80-aaef-45381e6a4215Job ID 120
+09-20 18:52:22.259 28814 28961 D WM-GreedyScheduler: Starting tracking for 454a7236-69a1-43fc-b7ec-27506ee791fe
+09-20 18:52:25.671 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:52:27.046 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245788478829569
+09-20 18:52:27.046 28814 14183 D FlightLandingDetector: [acc] Checking 394 samples
+09-20 18:52:27.046 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245780031553030, value=9.930599)
+09-20 18:52:27.046 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.046 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.046 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.046 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.047 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.047 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.047 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.047 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:27.048 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:52:27.048 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:52:27.048 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245794349810090
+09-20 18:52:27.049 28814 14183 D FlightLandingDetector: [acc] Checking 8 samples
+09-20 18:52:27.049 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245780031553030, value=9.930599)
+09-20 18:52:27.050 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:52:27.050 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:52:27.050 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245810005122850
+09-20 18:52:27.050 28814 11698 D FlightLandingDetector: [acc] Checking 8 samples
+09-20 18:52:27.050 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245780031553030, value=9.930599)
+09-20 18:52:55.613 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245817641790871
+09-20 18:52:55.613 28814 11686 D FlightLandingDetector: [acc] Checking 10 samples
+09-20 18:52:55.613 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245811818767903, value=9.919551)
+09-20 18:52:55.613 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:55.613 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:55.614 28814 11686 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:52:55.614 28814 11686 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:52:55.615 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245836542289778
+09-20 18:52:55.615 28814 11686 D FlightLandingDetector: [acc] Checking 10 samples
+09-20 18:52:55.615 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245811818767903, value=9.919551)
+09-20 18:52:55.615 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:55.615 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:55.616 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:52:55.616 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:52:55.616 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245838594550923
+09-20 18:52:55.616 28814 14183 D FlightLandingDetector: [acc] Checking 10 samples
+09-20 18:52:55.616 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245811818767903, value=9.919551)
+09-20 18:52:55.616 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:55.616 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:52:57.921 28814 28911 V CLogger : needsRotation false
+09-20 18:52:57.936 28814 28911 V CLogger : needsRotation false
+09-20 18:52:59.962 28814 28911 V CLogger : needsRotation false
+09-20 18:53:29.972 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:53:29.990 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245851001978295
+09-20 18:53:29.991 28814 14183 D FlightLandingDetector: [acc] Checking 24 samples
+09-20 18:53:29.991 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245842983396705, value=9.930046)
+09-20 18:53:29.991 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.991 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.991 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.991 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.992 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:53:29.992 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:53:29.993 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245857301965378
+09-20 18:53:29.993 28814 11698 D FlightLandingDetector: [acc] Checking 24 samples
+09-20 18:53:29.993 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245842983396705, value=9.930046)
+09-20 18:53:29.993 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.993 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.993 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.993 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.995 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:53:29.995 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:53:29.995 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245858256560170
+09-20 18:53:29.995 28814 11698 D FlightLandingDetector: [acc] Checking 24 samples
+09-20 18:53:29.995 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245842983396705, value=9.930046)
+09-20 18:53:29.996 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.996 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.996 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.996 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.997 28814 14183 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:53:29.997 28814 14183 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:53:29.997 28814 11686 D FlightLandingDetector: [acc] Gap in data or rogue event at 245872957101003
+09-20 18:53:29.998 28814 11686 D FlightLandingDetector: [acc] Checking 24 samples
+09-20 18:53:29.998 28814 11686 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245842983396705, value=9.930046)
+09-20 18:53:29.998 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.998 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.998 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:29.998 28814 11686 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:33.066 28814 28819 I milybase.parent: Background concurrent mark compact GC freed 33MB AllocSpace bytes, 465(14MB) LOS objects, 43% free, 61MB/109MB, paused 10.186ms,16.045ms total 723.709ms
+09-20 18:53:56.447 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245875343607097
+09-20 18:53:56.447 28814 11698 D FlightLandingDetector: [acc] Checking 25 samples
+09-20 18:53:56.447 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245872957101003, value=9.910883)
+09-20 18:53:56.447 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.447 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.447 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.447 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.448 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:53:56.448 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:53:56.448 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245884173759285
+09-20 18:53:56.448 28814 11698 D FlightLandingDetector: [acc] Checking 25 samples
+09-20 18:53:56.448 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245872957101003, value=9.910883)
+09-20 18:53:56.448 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.448 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.448 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.448 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.448 28814 11698 E FlightLandingDetector: Error adding accelerometer sample: Child of the scoped flow was cancelled
+09-20 18:53:56.448 28814 11698 E FlightLandingDetector: kotlinx.coroutines.flow.internal.ChildCancelledException: Child of the scoped flow was cancelled
+09-20 18:53:56.449 28814 11698 D FlightLandingDetector: [acc] Gap in data or rogue event at 245899446516160
+09-20 18:53:56.449 28814 11698 D FlightLandingDetector: [acc] Checking 25 samples
+09-20 18:53:56.449 28814 11698 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245872957101003, value=9.910883)
+09-20 18:53:56.449 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.449 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.449 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:56.449 28814 11698 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:53:57.395 28814 28911 V CLogger : needsRotation false
+09-20 18:54:01.121 28814 28911 V CLogger : needsRotation false
+09-20 18:54:31.153 28814 28911 V DeviceLogHandler: MSG_FORCE_FLUSH
+09-20 18:54:31.194 28814 14183 D FlightLandingDetector: [acc] Gap in data or rogue event at 245911042878636
+09-20 18:54:31.194 28814 14183 D FlightLandingDetector: [acc] Checking 32 samples
+09-20 18:54:31.194 28814 14183 D FlightLandingDetector: [acc] Latest entry: SensorReading(timestamp=245904170441003, value=9.925873)
+09-20 18:54:31.194 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?
+09-20 18:54:31.194 28814 14183 D SensorReadingMathProcessor: [moving var] Hole in data?

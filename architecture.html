@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MCP Gateway architecture</title><style>
+:root{--ink:#172a37;--muted:#73818b;--line:#e1e8e9;--bg:#f5f7f8;--green:#167765;--nav:#102c33}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+header{background:var(--nav);color:#fff;padding:36px 0 40px}.wrap{max-width:1180px;margin:auto;padding:0 28px}
+.eyebrow{font-size:11px;letter-spacing:2px;color:#b9efcf;font-weight:700;margin-bottom:8px}
+h1{margin:0 0 8px;font-size:32px;letter-spacing:-1px;font-weight:650}header p{margin:0;color:#abc0c4;max-width:720px}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{background:#26464a;color:#e3f4ec;border-radius:6px;padding:5px 11px;font-size:12px}
+main{padding:30px 0 60px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 28px;margin-bottom:24px;position:relative}
+.num{position:absolute;top:24px;right:28px;width:30px;height:30px;border-radius:50%;background:#ddf3e9;color:var(--green);display:grid;place-items:center;font-weight:700;font-size:13px}
+h2{margin:0 0 4px;font-size:20px;letter-spacing:-.4px;font-weight:650}.cap{margin:0 0 18px;color:var(--muted);max-width:760px}
+code{background:#eef3f4;padding:1px 6px;border-radius:4px;font-size:13px}.diagram{overflow-x:auto;background:#fbfcfc;border:1px solid #edf1f2;border-radius:10px;padding:18px}
+.mermaid{margin:0;text-align:center}
+table{width:100%;border-collapse:collapse;font-size:13.5px}th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);font-weight:500;padding:10px;border-bottom:1px solid var(--line)}
+td{padding:11px 10px;border-bottom:1px solid #edf1f2;vertical-align:top}tr:last-child td{border:0}td:first-child{white-space:nowrap;font-weight:600}
+footer{color:#98a2a7;font-size:12px;text-align:center;padding-bottom:30px}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow">ARCHITECTURE</div><h1>MCP Gateway</h1>
+<p>One gateway in front of two MCP servers, all over streamable HTTP, with logging, metrics and a dashboard.</p>
+<div class="pills"><span class="pill">FastAPI</span><span class="pill">FastMCP</span><span class="pill">Streamable HTTP</span><span class="pill">Docker</span><span class="pill">3 projects</span></div></div></header>
+<main><div class="wrap"><section class="card"><div class="num">1</div><h2>System architecture</h2><p class="cap">Who talks to whom inside the Docker network. Clients and the browser only ever reach the gateway; the gateway fans out to the MCP servers by tool-name prefix.</p><div class="diagram"><pre class="mermaid">flowchart TB
+    client[&quot;MCP client&lt;br/&gt;(Claude, IDE, agent)&quot;]
+    browser[&quot;Browser&lt;br/&gt;(dashboard, Swagger)&quot;]
+
+    subgraph docker[&quot;Docker network: mcp-net&quot;]
+        direction LR
+
+        subgraph gw[&quot;mcp-gateway :8000  (FastAPI + FastMCP)&quot;]
+            direction TB
+            reqlog[&quot;RequestLogMiddleware&lt;br/&gt;request received / completed&quot;]
+            mcp[&quot;MCP endpoint /mcp&lt;br/&gt;GatewayMiddleware: logs, timing, metrics&quot;]
+            api[&quot;REST API /api/*&lt;br/&gt;dashboard + Swagger /docs&quot;]
+            router[&quot;Prefix routing&lt;br/&gt;weather_* , notes_*&quot;]
+            pool[&quot;UpstreamPool&lt;br/&gt;one long-lived session per server&quot;]
+            health[&quot;HealthMonitor&lt;br/&gt;probes every 30s&quot;]
+            metrics[(&quot;MetricsStore&lt;br/&gt;in memory&quot;)]
+            config[/&quot;config/servers.json&quot;/]
+
+            reqlog --&gt; mcp
+            reqlog --&gt; api
+            mcp --&gt; router --&gt; pool
+            mcp -. &quot;record call&quot; .-&gt; metrics
+            api -. &quot;read&quot; .-&gt; metrics
+            health -. &quot;status + tool schemas&quot; .-&gt; api
+            config -. &quot;server list&quot; .-&gt; router
+        end
+
+        subgraph w[&quot;weather-server :8000&quot;]
+            direction TB
+            wmw[&quot;ToolTimingMiddleware&quot;]
+            wt[&quot;get_current&lt;br/&gt;get_forecast&lt;br/&gt;get_alerts&quot;]
+            wmw --&gt; wt
+        end
+
+        subgraph n[&quot;notes-server :8000&quot;]
+            direction TB
+            nmw[&quot;ToolTimingMiddleware&quot;]
+            nt[&quot;create_note&lt;br/&gt;list_notes&lt;br/&gt;search_notes&lt;br/&gt;delete_note&quot;]
+            nmw --&gt; nt
+        end
+    end
+
+    client -- &quot;HTTP POST /mcp&lt;br/&gt;JSON-RPC&quot; --&gt; reqlog
+    browser -- &quot;HTTP /, /api, /docs&quot; --&gt; reqlog
+    pool -- &quot;streamable HTTP /mcp&quot; --&gt; wmw
+    pool -- &quot;streamable HTTP /mcp&quot; --&gt; nmw
+    health -. &quot;tools/list&quot; .-&gt; wmw
+    health -. &quot;tools/list&quot; .-&gt; nmw
+
+    classDef edge fill:#e9f2ef,stroke:#167765,color:#102c33
+    classDef core fill:#ffffff,stroke:#167765,color:#102c33
+    classDef srv fill:#fbf1e4,stroke:#b07a2a,color:#412402
+    classDef store fill:#edf1f8,stroke:#5571a7,color:#172a37
+    class client,browser edge
+    class reqlog,mcp,api,router,pool,health core
+    class wmw,wt,nmw,nt srv
+    class metrics,config store
+</pre></div></section><section class="card"><div class="num">2</div><h2>A tool call, end to end</h2><p class="cap">What happens, and what gets logged, when a client calls <code>notes_create_note</code> through the gateway.</p><div class="diagram"><pre class="mermaid">sequenceDiagram
+    autonumber
+    actor C as MCP client
+    participant G as mcp-gateway
+    participant M as GatewayMiddleware
+    participant P as UpstreamPool
+    participant S as notes-server
+    participant D as MetricsStore
+
+    C-&gt;&gt;G: POST /mcp  tools/call notes_create_note
+    Note over G: LOG request received id=ab12cd34
+    G-&gt;&gt;M: on_call_tool
+    Note over M: LOG tool call received&lt;br/&gt;server=notes tool=create_note
+    M-&gt;&gt;M: start timer, resolve prefix notes_
+    M-&gt;&gt;P: forward create_note (reuse open session)
+    P-&gt;&gt;S: POST /mcp  tools/call create_note
+    Note over S: LOG tool call received
+    S-&gt;&gt;S: run tool under asyncio.Lock
+    Note over S: LOG tool call completed tool_ms=52
+    S--&gt;&gt;P: result
+    P--&gt;&gt;M: result
+    M-&gt;&gt;D: record(notes, create_note, ok, 98 ms)
+    Note over M: LOG tool call completed tool_ms=98
+    M--&gt;&gt;G: result
+    Note over G: LOG request completed status=200 elapsed_ms=128
+    G--&gt;&gt;C: JSON-RPC result
+</pre></div></section><section class="card"><div class="num">3</div><h2>Upstream failure: timeout, reconnect, retry once</h2><p class="cap">How the gateway recovers when an MCP server restarts while calls are in flight.</p><div class="diagram"><pre class="mermaid">sequenceDiagram
+    autonumber
+    actor C as MCP client
+    participant M as GatewayMiddleware
+    participant P as UpstreamPool
+    participant S as weather-server
+
+    Note over S: container restarts, old session is now invalid
+    C-&gt;&gt;M: tools/call weather_get_current
+    M-&gt;&gt;P: forward (generation = 3)
+    P-&gt;&gt;S: call on stale session
+    S--xP: error or no reply (timeout 8s)
+    M-&gt;&gt;M: LOG upstream call failed, reconnecting
+    M-&gt;&gt;P: reset(weather, generation 3)
+    Note over P: per-server lock: first caller reconnects,&lt;br/&gt;concurrent callers see generation 4 and skip
+    P-&gt;&gt;S: open new session
+    S--&gt;&gt;P: initialized
+    M-&gt;&gt;P: retry call once
+    P-&gt;&gt;S: tools/call get_current
+    S--&gt;&gt;P: result
+    M--&gt;&gt;C: result (or an error if the retry also fails)
+</pre></div></section><section class="card"><div class="num">4</div><h2>Dashboard and health probing</h2><p class="cap">How the dashboard gets its data and how server health and tool contracts are discovered.</p><div class="diagram"><pre class="mermaid">sequenceDiagram
+    autonumber
+    actor U as You (browser)
+    participant G as mcp-gateway
+    participant H as HealthMonitor
+    participant S as weather / notes servers
+    participant D as MetricsStore
+
+    loop every 30s
+        H-&gt;&gt;S: tools/list
+        S--&gt;&gt;H: tools + JSON Schemas
+        H-&gt;&gt;H: status up or down, probe_ms
+    end
+
+    U-&gt;&gt;G: GET /  (static dashboard)
+    loop every 5s
+        U-&gt;&gt;G: GET /api/overview, servers, tools, metrics, calls
+        G-&gt;&gt;H: read status and tool contracts
+        G-&gt;&gt;D: snapshot (counts, p95, series)
+        G--&gt;&gt;U: JSON (typed models, see /docs)
+    end
+    U-&gt;&gt;G: click a tool
+    Note over U: popup shows input and output JSON Schema
+</pre></div></section>
+<section class="card"><h2>Components</h2><p class="cap">What each piece of the gateway does.</p><table>
+<tr><th>Component</th><th>Responsibility</th></tr>
+<tr><td>RequestLogMiddleware</td><td>Logs every HTTP request: received, completed, status, <code>elapsed_ms</code>.</td></tr>
+<tr><td>GatewayMiddleware</td><td>Logs each MCP message, times every tool call (<code>tool_ms</code>), records metrics, retries once on transport failure.</td></tr>
+<tr><td>Prefix routing</td><td><code>weather_get_forecast</code> goes to <code>weather</code> as <code>get_forecast</code>; <code>notes_*</code> goes to <code>notes</code>.</td></tr>
+<tr><td>UpstreamPool</td><td>One open MCP session per server (cuts about 45 ms per call), single-flight reconnect.</td></tr>
+<tr><td>HealthMonitor</td><td>Probes servers, caches status and tool JSON Schemas for the dashboard.</td></tr>
+<tr><td>MetricsStore</td><td>Bounded in-memory call history: counts, success rate, average, p95, per-minute series.</td></tr>
+</table></section></div></main><footer>Source: docs/architecture.md</footer>
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs";
+mermaid.initialize({startOnLoad:true,theme:"base",securityLevel:"loose",sequence:{mirrorActors:false,actorMargin:60,messageMargin:34,useMaxWidth:true,showSequenceNumbers:false},flowchart:{curve:"basis",htmlLabels:true,useMaxWidth:true,padding:14},
+themeVariables:{fontFamily:"system-ui,-apple-system,sans-serif",fontSize:"14px",primaryColor:"#e9f2ef",primaryBorderColor:"#167765",primaryTextColor:"#102c33",lineColor:"#5b7a80",secondaryColor:"#fbf1e4",tertiaryColor:"#ffffff",actorBkg:"#102c33",actorTextColor:"#ffffff",actorBorder:"#102c33",signalColor:"#3c5a60",noteBkgColor:"#fff5dd",noteTextColor:"#6b4e1a",noteBorderColor:"#e5ad5c",activationBkgColor:"#ddf3e9",sequenceNumberColor:"#ffffff"}});
+</script></body></html>

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Program Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --surface2:#f7f8fb; --fg:#161b26; --muted:#5c6577; --line:#e2e6ee;
+  --accent:#2f5bea; --accent-soft:#e8eefd;
+  --s-todo:#aab2c2; --s-prog:#3b82f6; --s-rev:#f2a20c; --s-done:#1f9d55;
+  --t2:#7d889d; --t3:#cbb8a0; --p1:#8b5cf6; --p2:#0ea5a4; --p3:#0891b2; --red:#dc2626; --p4:#6366f1; --d2:#65a30d; --d3:#0d9488; --d4:#9ca3af;
+  --good:#1f7a4a; --good-bg:#e1f4e9; --warn:#9a6200; --warn-bg:#fdf0d2; --bad:#b4262c; --bad-bg:#fde4e4; --idle:#4b5468; --idle-bg:#e9ecf3;
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; --display:'Space Grotesk','Inter',system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f131b; --surface:#171c27; --surface2:#1c2230; --fg:#e8ecf4; --muted:#98a2b6; --line:#2a3242;
+  --accent:#7b9cff; --accent-soft:#222d52;
+  --s-todo:#556078; --s-prog:#4c8ff5; --s-rev:#e8a824; --s-done:#35b672;
+  --t2:#7a869c; --t3:#a38f78; --p1:#a78bfa; --p2:#2dd4bf; --p3:#22d3ee; --red:#ff5c5c; --p4:#818cf8; --d2:#a3e635; --d3:#2dd4bf; --d4:#6b7280;
+  --good:#6ee0a0; --good-bg:#16342a; --warn:#f2c660; --warn-bg:#3a2e12; --bad:#ff8f93; --bad-bg:#3d1c1f; --idle:#aab3c6; --idle-bg:#252c3b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131b; --surface:#171c27; --surface2:#1c2230; --fg:#e8ecf4; --muted:#98a2b6; --line:#2a3242;
+  --accent:#7b9cff; --accent-soft:#222d52;
+  --s-todo:#556078; --s-prog:#4c8ff5; --s-rev:#e8a824; --s-done:#35b672;
+  --t2:#7a869c; --t3:#a38f78; --p1:#a78bfa; --p2:#2dd4bf; --p3:#22d3ee; --red:#ff5c5c; --p4:#818cf8; --d2:#a3e635; --d3:#2dd4bf; --d4:#6b7280;
+  --good:#6ee0a0; --good-bg:#16342a; --warn:#f2c660; --warn-bg:#3a2e12; --bad:#ff8f93; --bad-bg:#3d1c1f; --idle:#aab3c6; --idle-bg:#252c3b; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:14px;line-height:1.45;
+  padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.shell{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);gap:28px;align-items:start}
+.main{display:flex;flex-direction:column;gap:20px;min-width:0}
+.view{display:flex;flex-direction:column;gap:16px;min-width:0}
+.view.card{display:block}
+.stack{display:flex;flex-direction:column;gap:16px}
+#statusCard .legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px 28px}
+#typeCard h3{margin-bottom:10px}
+.view[hidden]{display:none!important}
+.side{position:sticky;top:24px;display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px}
+.side-h{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600;padding:6px 10px 8px}
+.nav{font:inherit;text-align:left;border:0;background:transparent;color:var(--fg);padding:9px 10px;border-radius:7px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nav:hover{background:var(--surface2)}
+.nav[aria-current="page"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.nav .cnt{font-size:12px;color:var(--muted);font-weight:500}
+@media(max-width:820px){.shell{grid-template-columns:minmax(0,1fr);gap:16px}.side{position:static;flex-direction:row;overflow-x:auto;padding:6px}.side-h{display:none}.nav{white-space:nowrap}}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:28px;line-height:1.15}
+h2{font-size:17px}
+h3{font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-family:var(--font)}
+.num{font-variant-numeric:tabular-nums}
+.top{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:flex-end}
+.top .meta{color:var(--muted);margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.key{font-family:var(--display);font-weight:600;color:var(--accent)}
+.stamp{background:var(--surface2);border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:6px 10px;font-size:12.5px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.kpi .v{font-family:var(--display);font-size:28px;font-weight:600;line-height:1.1;margin-top:4px}
+.kpi .s{color:var(--muted);font-size:12.5px;margin-top:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.card header{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.card header p{margin:0;color:var(--muted);font-size:12.5px}
+.donutrow{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.donut{width:150px;height:150px;flex:none}
+.donut text{fill:var(--fg);font-family:var(--display)}
+.legend{display:flex;flex-direction:column;gap:6px;flex:1;min-width:150px}
+.legend div{display:flex;align-items:center;gap:8px}
+.legend .n{margin-left:auto;font-weight:600}
+.legend .p{color:var(--muted);width:42px;text-align:right}
+.dot{width:10px;height:10px;border-radius:3px;flex:none;display:inline-block}
+.rows{display:flex;flex-direction:column;gap:9px}
+.row{display:grid;grid-template-columns:minmax(90px,170px) 1fr 34px;gap:10px;align-items:center}
+.row .lab{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .lab small{color:var(--muted);display:block;font-size:11.5px;overflow:hidden;text-overflow:ellipsis}
+.row .tot{text-align:right;font-weight:600}
+.track{height:14px;display:flex}
+.bar{display:flex;height:100%;border-radius:4px;overflow:hidden;gap:1px;background:var(--surface)}
+.bar i{display:block;height:100%;min-width:2px}
+.key-legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12.5px}
+.key-legend span{display:inline-flex;align-items:center;gap:6px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:11.5px;background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:1px 8px;color:var(--muted)}
+table{border-collapse:collapse;width:100%}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);text-align:left;font-weight:600;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap;position:sticky;top:0;background:var(--surface)}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto}
+.scroll.tall{max-height:380px;overflow-y:auto}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.pill.good{background:var(--good-bg);color:var(--good)}.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)}.pill.idle{background:var(--idle-bg);color:var(--idle)}
+.st{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.vers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+button.vcard{font:inherit;color:inherit;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:8px;min-width:0}
+button.vcard:hover{border-color:var(--accent)}
+button.vcard[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent);background:var(--accent-soft)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vcard .t{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.vcard .name{font-family:var(--display);font-weight:600;font-size:18px;overflow-wrap:anywhere}
+.vcard .d{color:var(--muted);font-size:12.5px}
+.vcard .cnt{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);gap:6px;flex-wrap:wrap}
+.vcard .cnt b{color:var(--fg)}
+.hint{color:var(--muted);font-size:12.5px}
+.mx td,.mx th{text-align:center;padding:4px}
+.mx td:first-child,.mx th:first-child{text-align:left;padding-left:10px;white-space:nowrap}
+.mx button{font:inherit;color:var(--fg);width:100%;min-width:52px;height:34px;border:1px solid transparent;border-radius:6px;cursor:pointer;background:color-mix(in srgb,var(--accent) calc(var(--k)*70%),var(--surface2))}
+.mx button:hover{border-color:var(--accent)}
+.mx button[aria-pressed="true"]{border-color:var(--fg);box-shadow:0 0 0 1px var(--fg)}
+.mx button.z{color:var(--muted);background:var(--surface2);cursor:default}
+.detail{scroll-margin-top:12px;display:flex;flex-direction:column;gap:16px;border:1px solid var(--accent);border-radius:12px;padding:18px;background:var(--surface)}
+.dhead{display:flex;flex-wrap:wrap;gap:10px 16px;justify-content:space-between;align-items:flex-start}
+.dhead .sub{color:var(--muted);margin-top:4px;display:flex;gap:6px 14px;flex-wrap:wrap}
+.filter{display:inline-flex;gap:6px;align-items:center;font-size:12.5px;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 4px 2px 10px}
+.filter button{font:inherit;border:0;background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1;padding:2px 6px;border-radius:999px}
+.dkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.dkpis div{background:var(--surface2);border-radius:8px;padding:10px 12px}
+.dkpis b{display:block;font-family:var(--display);font-size:22px;font-weight:600}
+.dkpis span{color:var(--muted);font-size:12px}
+.sub-card{border:1px solid var(--line);border-radius:10px;padding:14px;min-width:0}
+.sub-card h3{margin-bottom:12px}
+.empty{color:var(--muted);padding:20px;text-align:center}
+.foot{color:var(--muted);font-size:12.5px}
+.lgs{gap:8px}
+.lg{font:inherit;font-size:12.5px;color:var(--fg);background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.lg:hover{border-color:var(--accent)}
+.lg[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+.lg.clr{background:transparent;border-style:dashed;color:var(--muted)}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.cc{display:flex;gap:8px;align-items:flex-start}
+.cc-y{position:relative;height:260px;width:30px;flex:none}
+.cc-y span{position:absolute;right:0;transform:translateY(50%);font-size:11.5px;color:var(--muted)}
+.cc-scroll{flex:1;min-width:0;overflow-x:auto}
+.cc-in{position:relative;display:flex;gap:12px;min-width:max-content;padding-bottom:2px}
+.cc-grid{position:absolute;left:0;right:0;top:0;height:260px;pointer-events:none}
+.cc-grid i{position:absolute;left:0;right:0;border-top:1px solid var(--line)}
+.cc-col{position:relative;width:92px;display:flex;flex-direction:column;align-items:center}
+.cc-b{height:260px;width:100%;display:flex;flex-direction:column-reverse;gap:1px;padding:0 14px}
+.cc-b i{display:flex;align-items:center;justify-content:center;border-radius:3px;min-height:2px;font-size:12px;font-weight:600;color:#fff;font-style:normal;text-shadow:0 0 3px rgba(0,0,0,.55);overflow:hidden}
+.cc-leg{margin-bottom:12px}.cc-leg b{color:var(--fg)}
+.cc-n{font-size:12px;margin-top:6px;max-width:88px;text-align:center;line-height:1.25;overflow-wrap:anywhere}
+.cc-c{font-weight:600;font-size:12px;color:var(--muted)}
+.ifilter{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+#iq{font:inherit;width:100%;max-width:460px;color:var(--fg);background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+#iq:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+#icount{color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0}
+td.empty{padding:24px}
+.etbl td{vertical-align:top;padding:12px 10px}
+.etbl th.r,.etbl td.r{text-align:right;white-space:nowrap}
+.etbl .ename{min-width:190px}.etbl .ename b{display:block;font-weight:600}
+.etbl small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.etbl .pcell{min-width:200px;width:34%}.etbl .pcell .track{height:16px}.etbl .pcell small{margin-top:5px}.etbl .pcell small b{color:var(--fg)}
+.etbl .blk{color:var(--bad);font-weight:600}
+.trkline{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:12px}.trkline b{color:var(--fg)}
+.dright{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:12.5px;border:0;background:transparent;color:var(--muted);padding:5px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.theme{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:6px;padding:5px 10px;cursor:pointer}
+#tip{position:fixed;z-index:50;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12px;padding:5px 8px;border-radius:6px;max-width:240px;display:none}
+@media(max-width:560px){h1{font-size:23px}.row{grid-template-columns:minmax(70px,110px) 1fr 28px}}
+@media(prefers-reduced-motion:no-preference){.detail{animation:in .2s ease-out}@keyframes in{from{opacity:.4;transform:translateY(6px)}}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="side" aria-label="Report sections">
+    <div class="side-h">Program report</div>
+    <button type="button" class="nav" data-view="overview">Overview</button>
+    <button type="button" class="nav" data-view="epics">Epics <span class="cnt num" id="nEpics"></span></button>
+    <button type="button" class="nav" data-view="matrix">Epic by release</button>
+    <button type="button" class="nav" data-view="versions">Releases <span class="cnt num" id="nVers"></span></button>
+  </nav>
+  <main class="main">
+    <div class="top">
+      <div>
+        <div class="key" id="initKey"></div>
+        <h1 id="title"></h1>
+        <div class="meta" id="meta"></div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span class="stamp" id="stamp"></span>
+        <div class="seg" role="group" aria-label="Bar colours"><button type="button" data-mode="cat" aria-pressed="false">Status groups</button><button type="button" data-mode="status" aria-pressed="true">Each status</button></div>
+        <button class="theme" id="themeBtn" type="button">Toggle theme</button>
+      </div>
+    </div>
+
+    <section class="view" id="view-overview">
+      <div class="kpis" id="kpis" aria-label="Program summary"></div>
+      <div class="stack">
+        <div class="card"><header><h3>Status distribution</h3><p>All stories and tasks</p></header><div id="statusCard"></div></div>
+        <div class="card"><header><h3>Issue type and priority</h3><p>Count by status</p></header><div id="typeCard"></div></div>
+      </div>
+    </section>
+
+    <section class="view card" id="view-epics" hidden>
+      <header><h2>Epics</h2><div class="key-legend" id="statusLegend"></div></header>
+      <p class="hint" style="margin:0 0 12px">Each bar is that epic's own tickets, so a full bar is 100% of the epic, not a comparison between epics.</p>
+      <div class="scroll"><table class="etbl" id="epicRows"></table></div>
+    </section>
+
+    <section class="view card" id="view-matrix" hidden>
+      <header><h2>Epic by release</h2><p>Issue count. Select a cell to open that release filtered by epic.</p></header>
+      <div class="scroll"><table class="mx" id="matrix"></table></div>
+    </section>
+
+    <section class="view" id="view-versions" hidden>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap">
+        <h2>Releases</h2><span class="hint">Select a release to see its metrics and distribution</span>
+      </div>
+      <div class="vers" id="vers"></div>
+      <section id="detail" class="detail" aria-live="polite"></section>
+    </section>
+
+    <p class="foot" id="foot"></p>
+  </main>
+</div>
+<div id="tip"></div>
+
+<script id="report-data" type="application/json">__REPORT_DATA__</script>
+<script>
+(function(){
+const DATA=JSON.parse(document.getElementById('report-data').textContent);
+const AS_OF=new Date(DATA.generated.slice(0,10)+'T00:00:00');
+const STATUS=DATA.statuses.map(s=>s.name);
+const PAL={todo:['--s-todo','--t2','--t3'],prog:['--s-prog','--s-rev','--p1','--p2','--p3','--p4'],done:['--s-done','--d2','--d3','--d4']};
+const SCOL={},SCAT={};
+['todo','prog','done'].forEach(c=>DATA.statuses.filter(s=>s.cat===c).forEach((s,k)=>{SCOL[s.name]=/blocked/i.test(s.name)?'var(--red)':'var('+PAL[c][k%PAL[c].length]+')';SCAT[s.name]=c}));
+const catCount=(a,c)=>a.filter(x=>x.cat===c).length;
+const EPICS=DATA.epics;
+// ---- group fix versions like RC106-FE / RC106-BE into one release (RC106) with tracks ----
+const TRK=DATA.tracks||[];
+const TLAB=Object.fromEntries(TRK.map(t=>[t.code.toUpperCase(),t.label]));
+const trkRe=TRK.length?new RegExp('^(.*?)[\\s._-]*('+TRK.map(t=>t.code.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')$','i'):null;
+const parseVer=n=>{const m=trkRe&&String(n).match(trkRe);return m&&m[1]?{base:m[1],track:m[2].toUpperCase()}:{base:n,track:null}};
+const RAWV=Object.fromEntries(DATA.versions.map(v=>[v.id,v]));
+const relMap=new Map();
+DATA.versions.forEach(v=>{if(v.id==='none')return;const p=parseVer(v.n);let r=relMap.get(p.base);
+  if(!r){r={n:p.base,date:null,state:'Released',members:[]};relMap.set(p.base,r)}
+  r.members.push({n:v.n,track:p.track,date:v.date,state:v.state});
+  if(v.date&&(!r.date||v.date>r.date))r.date=v.date;if(v.state!=='Released')r.state='Unreleased'});
+const VERS=[...relMap.values()].sort((a,b)=>(a.date===null)-(b.date===null)||(a.date||'').localeCompare(b.date||'')||a.n.localeCompare(b.n,undefined,{numeric:true}));
+VERS.forEach((r,n)=>r.id='fv'+(n+1));
+const byBase=Object.fromEntries(VERS.map(r=>[r.n,r]));
+const ISSUES=DATA.issues.map(i=>{const v=RAWV[i.ver];if(!v||i.ver==='none')return Object.assign({},i,{ver:'none',trks:[]});
+  const p=parseVer(v.n),rel=byBase[p.base];
+  const trks=[...new Set((i.fvs&&i.fvs.length?i.fvs:[v.n]).map(parseVer).filter(q=>q.base===p.base&&q.track).map(q=>q.track))];
+  return Object.assign({},i,{ver:rel.id,trks})});
+if(ISSUES.some(i=>i.ver==='none'))VERS.push({id:'none',n:'No release',date:null,state:'Unplanned',members:[]});
+const relTracks=r=>TRK.map(t=>t.code.toUpperCase()).filter(c=>r.members.some(m=>m.track===c));
+let TK='';
+
+const PRIO=DATA.priorities.slice();
+ISSUES.forEach(i=>{if(!PRIO.includes(i.prio))PRIO.push(i.prio)});
+const TYPES=[...new Set(ISSUES.map(i=>i.type))];
+const EN=Object.fromEntries(EPICS.map(e=>[e.k,e.n]));
+const VN=Object.fromEntries(VERS.map(v=>[v.id,v]));
+const link=k=>DATA.base?`<a href="${esc(DATA.base)}/browse/${esc(k)}" target="_blank" rel="noopener">${esc(k)}</a>`:esc(k);
+
+const $=id=>document.getElementById(id);
+const sum=(a,f)=>a.reduce((s,x)=>s+f(x),0);
+const by=(a,f)=>{const m=new Map();a.forEach(x=>{const k=f(x);if(!m.has(k))m.set(k,[]);m.get(k).push(x)});return m};
+const pct=(n,d)=>d?Math.round(n/d*100):0;
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+const fmtDate=d=>new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+const dot=s=>`<span class="dot" style="background:${SCOL[s]}"></span>`;
+const sCount=(a,s)=>a.filter(x=>x.status===s).length;
+const daysTo=d=>Math.round((new Date(d+'T00:00:00')-AS_OF)/864e5);
+
+let MODE='status';
+const CATS=[{k:'todo',n:'To Do',c:'var(--s-todo)'},{k:'prog',n:'In Progress',c:'var(--s-prog)'},{k:'done',n:'Done',c:'var(--s-done)'}];
+function legend(){return MODE==='cat'?CATS.map(c=>`<span title="${esc(DATA.statuses.filter(s=>s.cat===c.k).map(s=>s.name).join(', '))}"><span class="dot" style="background:${c.c}"></span>${c.n}</span>`).join(''):STATUS.map(s=>`<span>${dot(s)}${esc(s)}</span>`).join('')}
+function stacked(items){
+  const t=items.length;
+  if(MODE==='cat')return CATS.map(c=>{const sub=items.filter(x=>x.cat===c.k);const n=sub.length;if(!n)return '';
+    const parts=[...by(sub,x=>x.status)].map(([s,a])=>s+' '+a.length).join(', ');
+    return `<i style="flex:${n};background:${c.c}" data-tip="${esc(c.n+': '+n+' ('+pct(n,t)+'%) – '+parts)}"></i>`}).join('');
+  return STATUS.map(s=>{const n=sCount(items,s);return n?`<i style="flex:${n};background:${SCOL[s]}" data-tip="${s}: ${n} (${pct(n,t)}%)"></i>`:''}).join('')}
+function stackRows(groups){
+  const max=Math.max(1,...groups.map(g=>g.items.length));
+  return `<div class="rows">`+groups.map(g=>`<div class="row"><div class="lab" title="${esc(g.label)}">${esc(g.label)}${g.sub?`<small>${esc(g.sub)}</small>`:''}</div>
+    <div class="track"><div class="bar" style="width:${Math.max(3,g.items.length/max*100)}%">${stacked(g.items)}</div></div><div class="tot num">${g.items.length}</div></div>`).join('')+`</div>`}
+function donut(items){
+  const present=STATUS.filter(s=>sCount(items,s)>0);
+  const t=items.length;let off=0;
+  const segs=present.map(s=>{const n=sCount(items,s),p=t?n/t*100:0;const c=n?`<circle cx="21" cy="21" r="15.9155" fill="none" stroke="${SCOL[s]}" stroke-width="6" stroke-dasharray="${p} ${100-p}" stroke-dashoffset="${-off+25}" data-tip="${s}: ${n}"></circle>`:'';off+=p;return c}).join('');
+  const done=pct(catCount(items,'done'),t);
+  return `<div class="donutrow"><svg class="donut" viewBox="0 0 42 42" role="img" aria-label="Status distribution"><circle cx="21" cy="21" r="15.9155" fill="none" stroke="var(--line)" stroke-width="6"></circle>${segs}
+    <text x="21" y="22.5" text-anchor="middle" font-size="8" font-weight="600">${done}%</text><text x="21" y="28" text-anchor="middle" font-size="3.2" style="fill:var(--muted)">done</text></svg>
+    <div class="legend">${present.map(s=>{const n=sCount(items,s);return `<div>${dot(s)}${s}<span class="n num">${n}</span><span class="p num">${pct(n,t)}%</span></div>`}).join('')}</div></div>`}
+
+function health(v,items){
+  if(v.state==='Released')return['good','Released'];
+  if(v.state==='Unplanned')return['idle','Unplanned'];
+  const open=items.length-catCount(items,'done');
+  if(!open)return['good','All done'];
+  const done=pct(catCount(items,'done'),items.length);
+  if(v.date){
+    const days=daysTo(v.date);
+    if(days<0)return['bad','Overdue'];
+    if(done===0&&catCount(items,'prog')===0)return['idle','Not started'];
+    if(days<45&&done<70)return['bad','At risk'];
+    if(days<45)return['warn','Watch'];
+    return['good','On track'];
+  }
+  return done===0?['idle','Not started']:['good','In progress'];
+}
+
+let FSEL=new Set(),TQ='',TS=new Set();
+function renderType(){
+  const keys=MODE==='cat'?CATS.map(c=>({k:c.k,n:c.n,c:c.c})):STATUS.map(s=>({k:s,n:s,c:SCOL[s]}));
+  const keep=i=>!FSEL.size||FSEL.has(MODE==='cat'?i.cat:i.status);
+  const lg=keys.map(x=>`<button type="button" class="lg" data-f="${esc(x.k)}" aria-pressed="${FSEL.has(x.k)}"><span class="dot" style="background:${x.c}"></span>${esc(x.n)}</button>`).join('');
+  const pool=ISSUES.filter(keep);
+  const rows=(arr,f)=>arr.map(k=>({label:k,items:pool.filter(i=>f(i)===k)})).filter(g=>!FSEL.size||g.items.length);
+  $('typeCard').innerHTML=`<div class="key-legend lgs" style="margin-bottom:12px"><button type="button" class="lg" data-f="" aria-pressed="${!FSEL.size}">Show all</button>${lg}</div>`+
+    `<div class="grid2"><div><h3>By issue type</h3>`+stackRows(rows(TYPES,i=>i.type))+`</div><div><h3>By priority</h3>`+stackRows(rows(PRIO,i=>i.prio).filter(g=>g.items.length))+`</div></div>`;
+}
+function colChart(groups){
+  const H=260,max=Math.max(1,...groups.map(g=>g.items.length));
+  const step=max<=5?1:max<=10?2:max<=25?5:max<=50?10:Math.pow(10,Math.floor(Math.log10(max)))/(max/Math.pow(10,Math.floor(Math.log10(max)))<3?2:1);
+  const top=Math.ceil(max/step)*step,ticks=[];for(let t=0;t<=top;t+=step)ticks.push(t);
+  const parts=items=>MODE==='cat'?CATS.map(c=>({n:items.filter(x=>x.cat===c.k).length,c:c.c,l:c.n})):STATUS.map(s=>({n:sCount(items,s),c:SCOL[s],l:s}));
+  const all=groups.flatMap(g=>g.items);
+  const leg=parts(all).filter(p=>p.n).map(p=>`<span><span class="dot" style="background:${p.c}"></span>${esc(p.l)} <b class="num">${p.n}</b></span>`).join('');
+  return `<div class="key-legend cc-leg">${leg}</div><div class="cc"><div class="cc-y">${ticks.map(t=>`<span style="bottom:${t/top*100}%">${t}</span>`).join('')}</div>
+    <div class="cc-scroll"><div class="cc-in"><div class="cc-grid">${ticks.map(t=>`<i style="bottom:${t/top*100}%"></i>`).join('')}</div>`+
+    groups.map(g=>`<div class="cc-col"><div class="cc-b">${parts(g.items).filter(p=>p.n).map(p=>`<i style="height:${p.n/top*100}%;background:${p.c}" data-tip="${esc(g.label+' · '+p.l+': '+p.n)}">${p.n/top*H>=15?p.n:''}</i>`).join('')}</div><div class="cc-n" title="${esc(g.label)}">${esc(g.label)}</div><div class="cc-c num">${g.items.length} total</div></div>`).join('')+`</div></div></div>`}
+function renderSummary(){
+  const T=ISSUES.length,done=catCount(ISSUES,'done'),pts=sum(ISSUES,i=>i.pts),dpts=sum(ISSUES.filter(i=>i.cat==='done'),i=>i.pts);
+  const people=new Set(ISSUES.map(i=>i.who).filter(w=>w!=='Unassigned'));
+  const realVers=VERS.filter(v=>v.state!=='Unplanned').length;
+  $('initKey').innerHTML=link(DATA.initiative.key)+' · Initiative'+(DATA.initiative.status?' · '+esc(DATA.initiative.status):'');
+  $('title').textContent=DATA.initiative.summary;
+  document.title=DATA.initiative.summary+' – Program Report';
+  $('stamp').textContent='Data pulled '+new Date(DATA.generated).toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  $('meta').innerHTML=`<span>${EPICS.filter(e=>e.k!=='NONE').length} epics</span><span>${realVers} releases</span><span>${people.size} assignees</span>`;
+  const hasPts=pts>0;
+  const tiles=[['Epics',EPICS.filter(e=>e.k!=='NONE').length,`${T} stories and tasks`],['Complete',pct(done,T)+'%',`${done} of ${T} done`],
+    ['In flight',catCount(ISSUES,'prog'),'Active statuses'],['Not started',catCount(ISSUES,'todo'),'Waiting to start']];
+  if(hasPts)tiles.splice(2,0,['Story points',dpts+' / '+pts,`${pct(dpts,pts)}% delivered`]);
+  tiles.push(['No release',ISSUES.filter(i=>i.ver==='none').length,'Not yet scheduled']);
+  $('kpis').innerHTML=tiles.map(t=>`<div class="kpi"><h3>${t[0]}</h3><div class="v num">${t[1]}</div><div class="s">${t[2]}</div></div>`).join('');
+  $('statusCard').innerHTML=donut(ISSUES);
+  renderType();
+  $('statusLegend').innerHTML=legend();
+  $('epicRows').innerHTML=`<thead><tr><th>Epic</th><th>Progress</th><th class="r">Done</th><th class="r">Open</th><th class="r">Total</th>${hasPts?'<th class="r">Points</th>':''}<th>Releases</th></tr></thead><tbody>`+EPICS.map(e=>{
+    const it=ISSUES.filter(i=>i.epic===e.k);
+    const done=catCount(it,'done'),open=it.length-done;
+    const blocked=it.filter(i=>/blocked/i.test(i.status)&&i.cat!=='done').length;
+    const vs=VERS.map(v=>[v,it.filter(i=>i.ver===v.id).length]).filter(x=>x[1]);
+    return `<tr><td class="ename"><b title="${esc(e.n)}">${esc(e.n)}</b><small>${e.k==='NONE'?'Not linked to an epic':link(e.k)+(e.status?' · '+esc(e.status):'')}</small></td>
+      <td class="pcell"><div class="track"><div class="bar" style="width:100%">${stacked(it)}</div></div><small><b class="num">${pct(done,it.length)}%</b> done</small></td>
+      <td class="r num">${done}</td><td class="r num">${open}${blocked?`<small class="blk">${blocked} blocked</small>`:''}</td><td class="r num"><b>${it.length}</b></td>${hasPts?`<td class="r num">${sum(it.filter(i=>i.cat==='done'),i=>i.pts)} / ${sum(it,i=>i.pts)}</td>`:''}
+      <td><div class="chips">${vs.map(([v,n])=>`<span class="chip">${esc(v.n)} · ${n}</span>`).join('')}</div></td></tr>`}).join('')+'</tbody>';
+  const ex=DATA.excluded;
+  $('foot').textContent=`Source: ${DATA.base||'Jira'} · found via ${DATA.strategy}.`+(ex?` ${ex} issues in excluded statuses (${DATA.excludedStatuses.join(', ')}) are not counted.`:' Every status found on the issues is shown.')+` Fix versions that differ only by a track suffix (RC106-FE, RC106-BE) are grouped into one release (RC106).`;
+}
+
+let sel=location.hash.slice(1),selEpic=null;
+if(!VN[sel])sel=(VERS.find(v=>v.state==='Unreleased')||VERS[0]||{id:'none'}).id;
+function renderVers(){
+  $('vers').innerHTML=VERS.map(v=>{
+    const it=ISSUES.filter(i=>i.ver===v.id),h=health(v,it),d=pct(catCount(it,'done'),it.length);
+    return `<button type="button" class="vcard" data-v="${v.id}" aria-pressed="${v.id===sel}">
+      <div class="t"><span class="name">${esc(v.n)}</span><span class="pill ${h[0]}">${h[1]}</span></div>
+      <div class="d">${v.date?(v.state==='Released'?'Released ':'Release ')+fmtDate(v.date):(v.state==='Unplanned'?'Not assigned to a release':'No release date')}</div>
+      <div class="track"><div class="bar" style="width:100%">${stacked(it)}</div></div>
+      ${relTracks(v).length?`<div class="trkline">${relTracks(v).map(t=>{const x=it.filter(i=>i.trks.includes(t));return `<span title="${esc(TLAB[t]||t)}"><b>${t}</b> ${x.length} · ${pct(catCount(x,'done'),x.length)}% done</span>`}).join('')}</div>`:''}
+      <div class="cnt"><span><b class="num">${it.length}</b> issues</span><span><b class="num">${d}%</b> done</span>${DATA.hasPoints?`<span><b class="num">${sum(it,i=>i.pts)}</b> pts</span>`:''}</div></button>`}).join('');
+  const counts=EPICS.flatMap(e=>VERS.map(v=>ISSUES.filter(i=>i.epic===e.k&&i.ver===v.id).length));
+  const mx=Math.max(1,...counts);
+  $('matrix').innerHTML='<tr><th>Epic</th>'+VERS.map(v=>`<th>${esc(v.n)}</th>`).join('')+'<th>Total</th></tr>'+EPICS.map(e=>{
+    const it=ISSUES.filter(i=>i.epic===e.k);
+    return `<tr><td title="${esc(e.n)}">${esc(e.n)}</td>`+VERS.map(v=>{const n=it.filter(i=>i.ver===v.id).length;
+      return `<td><button type="button" class="${n?'':'z'}" style="--k:${n/mx}" data-v="${v.id}" data-e="${esc(e.k)}" aria-pressed="${v.id===sel&&selEpic===e.k}" ${n?'':'disabled'}>${n||'–'}</button></td>`}).join('')+`<td class="num"><b>${it.length}</b></td></tr>`}).join('');
+}
+function renderDetail(){
+  const v=VN[sel];
+  if(!v){$('detail').innerHTML='<div class="empty">No releases found.</div>';return}
+  const all=ISSUES.filter(i=>i.ver===sel);let it=all;
+  if(selEpic)it=it.filter(i=>i.epic===selEpic);
+  const tr=relTracks(v);if(!tr.includes(TK))TK='';
+  const base=it;if(TK)it=it.filter(i=>i.trks.includes(TK));
+  const h=health(v,all);
+  const done=catCount(it,'done'),pts=sum(it,i=>i.pts),dpts=sum(it.filter(i=>i.cat==='done'),i=>i.pts);
+  const days=v.date?daysTo(v.date):null;
+  const unassigned=it.filter(i=>i.who==='Unassigned'&&i.cat!=='done').length;
+  const top=PRIO[0];
+  const topOpen=it.filter(i=>i.prio===top&&i.cat!=='done').length;
+  const dayTxt=days===null?'–':v.state==='Released'?'Shipped':days<0?Math.abs(days)+' d late':days+' d';
+  const kp=[[it.length,'Issues'],[pct(done,it.length)+'%','Complete'],[it.length-done,'Still open']];
+  if(DATA.hasPoints)kp.splice(2,0,[dpts+' / '+pts,'Story points done']);
+  kp.push([topOpen,top+' priority open'],[unassigned,'Open and unassigned'],[dayTxt,v.state==='Released'?'Status':'Until release']);
+  const byType=TYPES.map(t=>({label:t,items:it.filter(i=>i.type===t)})).filter(g=>g.items.length);
+  const byEpic=EPICS.map(e=>({label:e.n,items:it.filter(i=>i.epic===e.k)})).filter(g=>g.items.length);
+  const byWho=[...by(it,i=>i.who)].map(([k,v2])=>({label:k,items:v2,sub:DATA.hasPoints?sum(v2,i=>i.pts)+' pts':''})).sort((a,b)=>b.items.length-a.items.length);
+  const byPrio=PRIO.map(p=>({label:p,items:it.filter(i=>i.prio===p)})).filter(g=>g.items.length);
+  const order={prog:0,todo:1,done:2};
+  const rows=[...it].sort((a,b)=>order[a.cat]-order[b.cat]||STATUS.indexOf(a.status)-STATUS.indexOf(b.status)||a.key.localeCompare(b.key,undefined,{numeric:true}));
+  $('detail').innerHTML=`<div class="dhead"><div><h2 style="font-size:22px">${esc(v.n)} <span class="pill ${h[0]}" style="vertical-align:middle">${h[1]}</span></h2>
+    <div class="sub">${v.members.length&&v.members.some(m=>m.track)?v.members.map(m=>`<span><b>${esc(m.track||m.n)}</b> ${m.date?(m.state==='Released'?'released ':'planned ')+fmtDate(m.date):'no date'}</span>`).join(''):`<span>${v.date?(v.state==='Released'?'Released ':'Planned ')+fmtDate(v.date):(v.state==='Unplanned'?'Issues without a release':'No release date set')}</span>`}<span>${all.length} issues in this release</span>
+    ${selEpic?`<span class="filter">Epic: ${esc(EN[selEpic])}<button type="button" id="clr" aria-label="Clear epic filter">×</button></span>`:''}</div></div>
+    <div class="dright">${tr.length?`<div class="seg" id="tkseg" role="group" aria-label="Frontend or backend"><button type="button" data-tk="" aria-pressed="${!TK}">All ${base.length}</button>${tr.map(t=>`<button type="button" data-tk="${t}" aria-pressed="${TK===t}" title="${esc(TLAB[t]||t)}">${t} ${base.filter(i=>i.trks.includes(t)).length}</button>`).join('')}</div>`:''}<div class="key-legend">${legend()}</div></div></div>
+    ${it.length?`<div class="dkpis">${kp.map(k=>`<div><b class="num">${k[0]}</b><span>${esc(k[1])}</span></div>`).join('')}</div>
+    <div class="trio">
+      <div class="sub-card"><h3>Status</h3>${donut(it)}</div>
+      <div class="sub-card"><h3>By epic</h3>${stackRows(byEpic)}</div>
+      <div class="sub-card"><h3>By type and priority</h3>${stackRows(byType)}<div style="height:12px"></div>${stackRows(byPrio)}</div>
+    </div>
+    <div class="sub-card"><h3>By assignee</h3>${colChart(byWho)}</div>
+    <div class="sub-card"><h3>Issues <span id="icount"></span></h3>
+    <div class="ifilter"><input id="iq" type="search" placeholder="Search by key, name, assignee or epic" value="${esc(TQ)}" aria-label="Search issues"><div class="key-legend lgs" id="ichips"></div></div>
+    <div class="scroll tall"><table><thead><tr><th>Key</th><th>Summary</th><th>Type</th><th>Epic</th><th>Assignee</th><th>Priority</th>${DATA.hasPoints?'<th>Pts</th>':''}<th>Status</th></tr></thead><tbody id="ibody"></tbody></table></div></div>`:`<div class="empty">No issues for this selection.</div>`}`;
+  document.querySelectorAll('#tkseg button').forEach(b=>b.onclick=()=>{TK=b.dataset.tk;TQ='';TS=new Set();renderDetail()});
+  const c=$('clr');if(c)c.onclick=()=>{selEpic=null;TQ='';TS=new Set();renderAll()}
+  if(it.length){
+    const rowHtml=i=>`<tr><td class="num">${link(i.key)}</td><td>${esc(i.summary)}</td><td>${esc(i.type)}</td><td>${esc(EN[i.epic])}</td><td>${esc(i.who)}</td><td>${esc(i.prio)}</td>${DATA.hasPoints?`<td class="num">${i.pts}</td>`:''}<td><span class="st" title="${esc(i.status)}">${dot(i.status)}${esc(i.status)}</span></td></tr>`;
+    const present=STATUS.filter(s=>SCAT[s]!=='done'&&rows.some(r=>r.status===s));
+    const nDone=rows.filter(r=>r.cat==='done').length;
+    const draw=()=>{
+      const toks=TQ.toLowerCase().split(/\s+/).filter(Boolean);
+      const f=rows.filter(i=>(TS.size?(i.cat==='done'?TS.has('__done'):TS.has(i.status)):i.cat!=='done')&&toks.every(t=>(i.key+' '+i.summary+' '+i.who+' '+EN[i.epic]).toLowerCase().includes(t)));
+      $('ibody').innerHTML=f.length?f.map(rowHtml).join(''):`<tr><td colspan="9" class="empty">No issues to show. Done tickets stay hidden unless "Done" is selected.</td></tr>`;
+      $('icount').textContent='('+f.length+(f.length!==rows.length?' of '+rows.length:'')+')';
+      $('ichips').innerHTML=`<button type="button" class="lg" data-s="" aria-pressed="${!TS.size}">All open</button>`+present.map(s=>`<button type="button" class="lg" data-s="${esc(s)}" aria-pressed="${TS.has(s)}">${dot(s)}${esc(s)} <span class="num">${rows.filter(r=>r.status===s).length}</span></button>`).join('')+(nDone?`<button type="button" class="lg" data-s="__done" aria-pressed="${TS.has('__done')}"><span class="dot" style="background:var(--s-done)"></span>Done <span class="num">${nDone}</span></button>`:'');
+    };
+    $('iq').oninput=e=>{TQ=e.target.value;draw()};
+    $('ichips').onclick=e=>{const b=e.target.closest('button[data-s]');if(!b)return;const s=b.dataset.s;if(!s)TS=new Set();else if(TS.has(s))TS.delete(s);else TS.add(s);draw()};
+    draw();
+  }
+}
+function renderAll(){renderVers();renderDetail()}
+const VIEWS=['overview','epics','matrix','versions'];
+let view=VN[location.hash.slice(1)]?'versions':(VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):'overview');
+function show(v){view=v;VIEWS.forEach(x=>{$('view-'+x).hidden=x!==v});document.querySelectorAll('.nav').forEach(b=>{if(b.dataset.view===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')})}
+document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>{show(b.dataset.view);try{history.replaceState(null,'','#'+(b.dataset.view==='versions'?sel:b.dataset.view))}catch(_){}scrollTo(0,0)});
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button[data-v]');if(!b||b.disabled)return;
+  sel=b.dataset.v;selEpic=b.dataset.e||null;TQ='';TS=new Set();TK='';
+  try{history.replaceState(null,'','#'+sel)}catch(_){}
+  show('versions');renderAll();$('detail').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});
+});
+addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(VN[h]){sel=h;selEpic=null;TQ='';TS=new Set();TK='';renderAll();show('versions')}else if(VIEWS.includes(h))show(h)});
+$('typeCard').addEventListener('click',e=>{const b=e.target.closest('button.lg');if(!b)return;const k=b.dataset.f;if(!k)FSEL=new Set();else if(FSEL.has(k))FSEL.delete(k);else FSEL.add(k);renderType()});
+const tip=$('tip');
+document.addEventListener('mousemove',e=>{const t=e.target.closest&&e.target.closest('[data-tip]');
+  if(!t){tip.style.display='none';return}
+  tip.textContent=t.getAttribute('data-tip');tip.style.display='block';
+  tip.style.left=Math.min(innerWidth-tip.offsetWidth-8,e.clientX+12)+'px';tip.style.top=(e.clientY+14)+'px'});
+$('themeBtn').onclick=()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dark?'light':'dark'};
+document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{MODE=b.dataset.mode;FSEL=new Set();document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderSummary();renderAll()});
+renderSummary();renderAll();
+$('nEpics').textContent=EPICS.filter(e=>e.k!=='NONE').length;$('nVers').textContent=VERS.filter(v=>v.state!=='Unplanned').length;
+show(view);
+})();
+</script>
+</body>
+</html>

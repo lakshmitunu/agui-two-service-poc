@@ -1,0 +1,110 @@
+TASK
+Integrate the "non-English feedback flagger" into our service and deploy it on
+Amazon EKS. Read README.md first, then flag_non_english.py. Do not rewrite the
+detection logic; wrap and deploy it.
+
+WHAT THE MODULE DOES
+- check_feedback(text) -> Result. Result.to_dict() is JSON-serializable.
+- Flags a comment if ANY part is not English (including mixed English+Spanish).
+  English is the only allowed language.
+- Result fields: flagged (bool, the decision), languages, reasons
+  (SCRIPT|SEGMENT|TOKEN|ERROR), reason_descriptions, evidence, error.
+- It never raises. On an unexpected error it returns flagged=True with
+  reasons=["ERROR"] so a person reviews the comment.
+- All thresholds are in the Config dataclass (see README "Settings").
+
+DEPENDENCIES - KEEP PINNED
+- requirements.txt pins: lingua-language-detector==2.2.0 and wordfreq==3.1.1.
+  Install exactly these. Do NOT unpin, loosen, or upgrade them: a library update
+  can change which comments are flagged.
+- pytest==9.2.0 is dev-only (requirements-dev.txt). Do not install it in the
+  runtime image.
+- Tested on Python 3.14. Use the same Python version in the Docker image, or
+  run the full test suite inside the built image and confirm it passes before
+  using a different version.
+- Both libraries ship their own data. No downloads, API keys, or network access
+  are needed at runtime. The image must work with no outbound internet.
+
+STARTUP LOADING - REQUIRED
+- The language models load once per process, lazily on the first
+  check_feedback() call (a few hundred MB, ~0.5 s locally). Without a warm-up
+  the first request is slow.
+- Call flag_non_english.warmup() during application startup, BEFORE the pod can
+  report Ready. Use FastAPI's lifespan (or equivalent startup hook).
+- /health (liveness): returns 200 as soon as the process is up. Do not call the
+  detector in it.
+- /ready (readiness): returns 200 only after warmup() has finished; 503 before.
+  Also use a startupProbe with a generous failureThreshold so a slow node does
+  not get the pod killed while models load.
+- Never create a new process per request. Load the models once per process.
+- If you run multiple workers (gunicorn/uvicorn), each worker holds its own
+  copy of the models. Either call warmup() before forking and use --preload so
+  memory is shared, or run ONE worker per pod and scale with pods. Prefer one
+  worker per pod.
+
+API TO BUILD (FastAPI)
+- POST /check        body {"text": "..."} -> returns Result.to_dict().
+- POST /check/batch  body {"texts": ["...", ...]} -> list of Result.to_dict(),
+  same order as input. Accept up to ~5,000 items (testing sends 5,000 at once).
+  The work is CPU-bound (~390 comments/second on one CPU): run it in a
+  threadpool or as a background job so the event loop and probes are not
+  blocked. If a batch can exceed the HTTP/ingress timeout, accept it and return
+  a job id, or stream results. Pick one and document it.
+- Validate input: text must be a string; enforce a max length (Config.max_chars
+  already truncates, but also reject bodies above a sane size).
+- Production traffic: ~100 comments/day, plus bursts of ~5,000 during testing at
+  irregular times.
+
+KUBERNETES / EKS
+- Deployment: 1 replica (2 if we want availability during restarts).
+- Resources: memory request 768Mi, limit 1Gi (do NOT go below 512Mi: the pod
+  can be OOM-killed). CPU request 250m, limit 1. Measured (laptop, not EKS):
+  ~300 MB after warm-up, ~400 MB after 5,000 comments, flat after that.
+- Probes: startupProbe + readinessProbe on /ready, livenessProbe on /health.
+- Run as a non-root user. readOnlyRootFilesystem: true if possible.
+- Set a terminationGracePeriodSeconds long enough to finish an in-flight batch.
+- Service (ClusterIP) and, only if needed, an Ingress. Ask me which ingress
+  controller we use; do not assume.
+- Provide manifests (Deployment, Service, optional HPA) and a Dockerfile. Pin
+  the base image tag (no :latest).
+- Verify real memory/CPU with `kubectl top pod` during a 5,000-comment test and
+  report the numbers. These were NOT measured on EKS yet.
+
+LOGGING AND PRIVACY
+- Do NOT log customer comment text, evidence, or request bodies. The module logs
+  a stack trace on internal errors: check what it can contain and make sure
+  comment text does not reach logs.
+- Log only counts, latency, flag decisions, and error types.
+- Expose basic metrics if we have Prometheus: requests, flag rate, latency,
+  error count.
+
+TESTING (do all of this, show me the output)
+1. pip install -r requirements-dev.txt; run `python -m pytest -q`. All must pass.
+2. Inside the built Docker image: run warmup(), then check these:
+   - "The product arrived broken"                      -> flagged=false
+   - "El producto llegó roto"                          -> flagged=true
+   - "Great service, pero la entrega fue lenta"        -> flagged=true
+   - "Thanks, José García" (English + Spanish name)    -> flagged=false
+   - "Great service 非常好"                             -> flagged=true
+3. Call /ready before and after warm-up; confirm 503 then 200.
+4. Send a 5,000-comment batch; confirm no timeout and record time and memory.
+
+DO NOT
+- Do not change detection logic or thresholds without telling me why.
+- Do not unpin or upgrade dependencies.
+- Do not commit secrets or push anything without asking.
+- Do not claim it works on EKS until you have run it there. State exactly what
+  you verified and what you did not.
+
+KNOWN LIMITATIONS (do not "fix" silently; report if you hit them)
+- Thresholds are defaults and have NOT been tuned on real data. Ask me for a
+  labeled sample of real comments to measure false flags and misses.
+- Very short comments (1-2 words) are unreliable.
+- A lone foreign word is only caught for es, pt, fr, it, de, ca, nl.
+- A name at the start of a comment, or typed in lowercase, can be flagged. Add
+  recurring names/brands to Config.allowlist.
+- "languages" is only a hint (Spanish/Portuguese words overlap). Use "flagged".
+
+DELIVERABLES
+- app/service code (FastAPI), Dockerfile, Kubernetes manifests, a short deploy
+  note, and the verification output from the testing section above.
